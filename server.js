@@ -147,7 +147,7 @@ app.post("/api/slideshow", prepareSlideshowUploads, async (req, res) => {
     const filterParts = [];
     const normalizedVideo = (inputIndex, label, duration) => {
       const trim = duration ? `,trim=duration=${duration}` : "";
-      filterParts.push(`[${inputIndex}:v]scale=854:480:force_original_aspect_ratio=decrease,pad=854:480:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=24,format=yuv420p,setpts=PTS-STARTPTS${trim}[${label}]`);
+      filterParts.push(`[${inputIndex}:v]scale=854:480:force_original_aspect_ratio=decrease,pad=854:480:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=24,settb=expr=1/24,setpts=N,format=yuv420p${trim}[${label}]`);
       return `[${label}]`;
     };
 
