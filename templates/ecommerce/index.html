@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-category="{{CATEGORY}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>{{BUSINESS_NAME}} | Thoughtful goods, well made</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/script.js" defer></script>
+</head>
+<body>
+  <header class="store-nav">
+    <a class="wordmark" href="#home">{{BUSINESS_NAME}}</a>
+    <nav><a href="#shop">Shop</a><a href="#story">Our story</a></nav>
+    <a class="cart" href="#shop">Bag <span id="cart-count">0</span></a>
+  </header>
+  <main id="home">
+    <section class="store-hero">
+      <div class="hero-copy"><p class="overline">THE EVERYDAY EDIT</p><h1>Good things.<br>Made to last.</h1><p>Useful, beautiful pieces chosen with care. Find your next favorite in our little corner of the internet.</p><a class="dark-button" href="#shop">Explore the collection <span>↗</span></a></div>
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85" alt="A considered selection of everyday apparel and accessories">
+    </section>
+    <section class="product-section" id="shop"><div class="section-title"><div><p class="overline">MADE FOR YOUR EVERYDAY</p><h2>Shop the collection</h2></div><p>Small-batch favorites, picked for a reason.</p></div>
+      <div class="product-grid">
+        <article class="product"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Minimal watch with a clean face"><div><div><h3>Everyday watch</h3><p>Quietly considered design</p></div><strong>$68</strong></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80" alt="Structured leather everyday bag"><div><div><h3>Market tote</h3><p>Room for the good stuff</p></div><strong>$54</strong></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Reusable bottle in a warm neutral color"><div><div><h3>Daily bottle</h3><p>Your desk-to-trail companion</p></div><strong>$32</strong></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=700&q=80" alt="Classic compact film camera"><div><div><h3>Weekend camera</h3><p>Keep the little moments</p></div><strong>$96</strong></div><button data-add>Add to bag</button></article>
+      </div>
+    </section>
+    <section class="story" id="story"><p class="overline">A NOTE FROM THE MAKER</p><h2>Buy less. Love it longer.</h2><p>{{OWNER_NAME}} believes the things we keep close should be made with intention. Every piece is chosen for thoughtful details and everyday usefulness.</p><a href="#contact">Questions? Get in touch →</a></section>
+    <footer id="contact"><span>© {{BUSINESS_NAME}}</span><span>Questions or orders: {{CONTACT}}</span></footer>
+  </main>{{OFFER_SCRIPT}}
+</body>
+</html>

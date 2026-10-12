@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f7f4">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Best1 Technologies home">
+      <div id="animated-logo">
+        <video autoplay loop muted playsinline width="120" poster="/assets/Best1-Logo-transparent.png" aria-hidden="true">
+          <source src="/assets/best1-logo-animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <img class="logo-image" src="/assets/Best1-Logo-transparent.png" alt="Best1 Technologies logo">
+        <span class="logo-fallback" aria-hidden="true" hidden>Best1</span>
+      </div>
+    </a>
+    <span class="top-note">Smart Website Builder</span>
+  </header>
+
+  <main class="page-shell">
+    <section id="founder" aria-labelledby="founder-title">
+      <h2 id="founder-title">Meet Our Founder</h2>
+      <div class="founder-card">
+        <img src="/uploads/ceo-photo.jpg" alt="Prasanth Kumar" class="founder-photo">
+      </div>
+      <section id="owner" aria-labelledby="owner-title">
+        <h3 id="owner-title">Owner</h3>
+        <p><strong>Owned and Managed by Best1 Technologies</strong></p>
+        <p><strong>Founder:</strong> Prasanth Kumar</p>
+        <p><strong>Qualification:</strong> M.C.A</p>
+        <p><strong>Vision:</strong> Helping businesses build a strong online presence.</p>
+        <p><strong>Contact:</strong> <a href="tel:+917550174293">+91 7550174293</a></p>
+        <p><strong>Email:</strong> <a href="mailto:prasanthkumarnp73@gmail.com">prasanthkumarnp73@gmail.com</a></p>
+      </section>
+    </section>
+
+    <div class="builder-column">
+      <section class="prompt-section" aria-labelledby="prompt-title">
+        <div class="prompt-intro">
+          <div class="welcome-art" aria-hidden="true">
+            <img src="/assets/Best1-Logo-transparent.png" alt="Best1 Technologies logo" class="welcome-logo">
+            <span class="art-heart art-heart-one">♥</span>
+            <span class="art-heart art-heart-two">♥</span>
+          </div>
+          <p class="kicker">SMART WEBSITE BUILDER</p>
+          <h2 id="prompt-title">Create your business website instantly</h2>
+        </div>
+        <form id="ai-form">
+          <label class="visually-hidden" for="ai-prompt">Describe your business and website</label>
+          <textarea id="ai-prompt" name="prompt" rows="3" placeholder="Describe your business, services, and style." required maxlength="1000"></textarea>
+          <div class="prompt-actions">
+            <button class="prompt-submit" id="create-website-button" type="button">Create Website</button>
+            <button class="question-button" id="ask-question-button" type="button">Ask a Question</button>
+          </div>
+          <button class="voice-button" id="voice-button" type="button">Use microphone</button>
+          <p class="voice-status" id="voice-status" aria-live="polite"></p>
+          <p class="form-result" id="ai-result" aria-live="polite"></p>
+          <section class="website-ready" id="website-ready" aria-labelledby="contact-followup-title" hidden>
+            <p class="form-result website-link-result" id="website-link-result" aria-live="polite"></p>
+            <div class="contact-followup">
+              <h3 id="contact-followup-title">🚀 Loved your new site? Let’s build more together.</h3>
+              <div class="contact-options">
+                <a class="contact-option call-option" href="tel:+917550174293">📞 Click to Call</a>
+                <a class="contact-option whatsapp-option" href="https://wa.me/917550174293?text=Hello%2C%20I%20reviewed%20my%20website%20and%20would%20like%20to%20discuss%20further%20customization." target="_blank" rel="noopener noreferrer">💬 Message on WhatsApp</a>
+              </div>
+            </div>
+          </section>
+        </form>
+      </section>
+    </div>
+    <section id="photo-video" aria-labelledby="photo-video-title">
+      <div class="photo-video-intro">
+        <p class="kicker">A LITTLE MOVEMENT, A LOT OF MEMORIES</p>
+        <h2 id="photo-video-title">Make a video from your memories</h2>
+        <p>Add up to ten photos, an optional video clip, and the music that fits the moment. Photos frame the video as intro and outro slides.</p>
+      </div>
+      <form id="slideshow-form">
+        <div class="slideshow-steps">
+          <fieldset class="slideshow-step">
+            <legend><span class="step-number">1</span> Upload Photos</legend>
+            <label class="media-file-picker" for="photo-files">
+              <span aria-hidden="true">＋</span>
+              <span>Add photos</span>
+              <input id="photo-files" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple>
+            </label>
+            <p class="upload-hint">Add photos in one or more selections · up to 10 · 50 MB each</p>
+            <div id="photo-previews" class="photo-previews" aria-live="polite"></div>
+          </fieldset>
+          <div class="step-connector" aria-hidden="true">→</div>
+          <div class="slideshow-step video-step">
+            <label for="video-file"><span class="step-number">2</span> Upload Video <span class="optional-label">Optional</span></label>
+            <label class="media-file-picker compact-file-picker" for="video-file">
+              <span aria-hidden="true">▶</span>
+              <span id="video-file-name">Choose a video</span>
+              <input id="video-file" name="video" type="file" accept="video/mp4,video/quicktime,video/webm,video/x-msvideo,video/x-matroska">
+            </label>
+            <p class="upload-hint">MP4, MOV, WebM, AVI, or MKV · up to 5 minutes / 50 MB</p>
+          </div>
+          <div class="step-connector" aria-hidden="true">→</div>
+          <div class="slideshow-step music-step">
+            <label for="music-track"><span class="step-number">3</span> Add Background Music</label>
+            <select id="music-track" name="musicTrack">
+              <option value="gentle">Gentle piano</option>
+              <option value="bright">Bright acoustic</option>
+              <option value="dreamy">Dreamy ambient</option>
+            </select>
+            <label class="media-file-picker compact-file-picker music-file-picker" for="music-file">
+              <span aria-hidden="true">♫</span>
+              <span id="music-file-name">Or upload your own music</span>
+              <input id="music-file" name="music" type="file" accept="audio/mpeg,audio/wav,audio/x-wav,audio/mp4,audio/x-m4a,audio/ogg,audio/webm,audio/aac">
+            </label>
+            <p class="upload-hint">Upload MP3, WAV, M4A, OGG, or AAC instead of a preset · 50 MB max</p>
+          </div>
+          <div class="step-connector" aria-hidden="true">→</div>
+          <div class="slideshow-step generate-step">
+            <span class="step-number">4</span>
+            <span>Generate Video</span>
+            <button class="prompt-submit generate-button" id="generate-video-button" type="submit">Create my video</button>
+          </div>
+        </div>
+        <p id="slideshow-status" class="form-result" aria-live="polite"></p>
+      </form>
+      <section id="slideshow-result" class="slideshow-result" aria-label="Generated slideshow" hidden>
+        <video id="slideshow-video" controls autoplay loop playsinline></video>
+        <a id="download-video" class="download-video" download="best1-photo-slideshow.mp4">Download MP4</a>
+      </section>
+      <p class="demo-note">This is a demo video creation feature. For advanced customization, contact the developer.</p>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Us</h2>
+      <div class="contact-details">
+        <p><strong>Phone:</strong> <a href="tel:+917550174293">+91 7550174293</a></p>
+        <p><strong>Email:</strong> <a href="mailto:prasanthkumarnp73@gmail.com">prasanthkumarnp73@gmail.com</a></p>
+        <p><strong>Address:</strong> No 1, Poovaiyar Street, Senthamil Nagar, Anna Nagar Main Road, Pattabiram, Chennai - 600072</p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://maps.google.com/maps?q=Best1%20Technologies%2C%20Mambalam%2C%20Chennai%2C%20India&output=embed"
+          title="Map to Best1 Technologies in Mambalam, Chennai"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <footer>Made for the people building something of their own.</footer>
+  </main>
+</body>
+</html>

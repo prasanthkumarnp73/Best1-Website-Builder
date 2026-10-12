@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-category="{{CATEGORY}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>{{BUSINESS_NAME}} | Here to help</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/script.js" defer></script>
+</head>
+<body>
+  <header class="business-nav"><a class="business-brand" href="#home">{{BUSINESS_NAME}}</a><nav><a href="#services">What we do</a><a href="#about">About</a><a class="nav-cta" href="#contact">Get in touch</a></nav></header>
+  <main id="home">
+    <section class="business-hero"><div class="hero-copy"><p class="eyebrow">A GOOD PLACE TO START</p><h1>{{TAGLINE}}</h1><p>{{DESCRIPTION}}</p><a class="primary-button" href="#services">See how we can help <span>↗</span></a><small>Locally led by {{OWNER_NAME}}</small></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Bright, welcoming workspace for a local business"><span>THOUGHTFUL WORK. HUMAN SERVICE.</span></div></section>
+    <section class="business-intro" id="about"><p class="eyebrow">A LITTLE ABOUT US</p><h2>People first.<br>Good work always.</h2><p>{{BUSINESS_NAME}} is an independent business led by {{OWNER_NAME}}. We bring care, clear communication, and a practical approach to every project.</p><a href="#contact">Start a conversation →</a></section>
+    <section class="service-section" id="services"><div class="section-heading"><div><p class="eyebrow">HERE WHEN YOU NEED US</p><h2>Ways we can help.</h2></div><p>Thoughtful support shaped around<br>what matters to you.</p></div><ul class="service-list">{{SERVICE_ITEMS}}</ul></section>
+    <section class="business-contact" id="contact"><div><p class="eyebrow">LET'S TALK</p><h2>What can we help<br>you with?</h2><p>Reach out to {{OWNER_NAME}} and tell us what you're looking for.</p><a class="primary-button" href="mailto:{{CONTACT}}">Contact us <span>↗</span></a><small>{{CONTACT}}</small></div><div class="contact-aside"><span>YOUR LOCAL BUSINESS</span><strong>{{BUSINESS_NAME}}</strong><p>{{TAGLINE}}</p><a href="tel:{{CONTACT}}">Call {{CONTACT}}</a></div></section>
+    <footer><span>{{BUSINESS_NAME}}</span><span>Led by {{OWNER_NAME}} · {{CONTACT}}</span></footer>
+  </main>{{OFFER_SCRIPT}}
+</body>
+</html>

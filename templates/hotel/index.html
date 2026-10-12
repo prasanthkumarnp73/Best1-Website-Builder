@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-category="{{CATEGORY}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>{{BUSINESS_NAME}} | Stay a little longer</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/script.js" defer></script>
+</head>
+<body>
+  <header class="hotel-nav"><a class="hotel-brand" href="#home">{{BUSINESS_NAME}}<span>A PLACE TO LAND</span></a><nav><a href="#stay">Stay</a><a href="#experience">The experience</a><a class="nav-contact" href="#contact">Plan your stay</a></nav></header>
+  <main id="home">
+    <section class="hotel-hero"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1900&q=90" alt="Welcoming boutique hotel framed by a garden"><div class="hero-wash"></div><div class="hotel-hero-copy"><p class="eyebrow">A WARM WELCOME IN EVERY SEASON</p><h1>Stay a little<br>longer.</h1><p>A thoughtful place to rest, recharge, and feel at home wherever the road takes you.</p><a class="gold-button" href="#stay">Discover your stay <span>↗</span></a></div><div class="hero-caption">A QUIET CORNER TO CALL YOURS</div></section>
+    <section class="hotel-intro" id="experience"><p class="eyebrow">A NOTE FROM {{OWNER_NAME}}</p><h2>Somewhere between<br>away and at home.</h2><p>At {{BUSINESS_NAME}}, the welcome is personal and the pace is your own. Settle into considered rooms, generous breakfasts, and the little details that make a stay memorable.</p><a href="#contact">We'd love to have you →</a></section>
+    <section class="rooms" id="stay"><div class="section-heading"><div><p class="eyebrow">MAKE YOURSELF AT HOME</p><h2>Find your room.</h2></div><p>Simple comforts, thoughtful touches,<br>and a very good night's sleep.</p></div><div class="room-grid"><article><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85" alt="Bright guest room with a comfortable bed"><div class="room-info"><div><h3>The Garden Room</h3><p>Light-filled · Queen bed · Garden view</p></div><span>From $145</span></div><a href="#contact">Ask about this room ↗</a></article><article><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85" alt="Warm boutique hotel bedroom with soft linen"><div class="room-info"><div><h3>The Corner Suite</h3><p>Extra room · King bed · Sitting nook</p></div><span>From $210</span></div><a href="#contact">Ask about this room ↗</a></article><article><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Quietly styled guest room with natural materials"><div class="room-info"><div><h3>The House Room</h3><p>Thoughtful details · King bed · Slow mornings</p></div><span>From $185</span></div><a href="#contact">Ask about this room ↗</a></article></div></section>
+    <section class="amenities"><p class="eyebrow">THE LITTLE THINGS, INCLUDED</p><div class="amenity-grid"><div><span>01</span><h3>Breakfast, slowly</h3><p>Fresh coffee and something lovely to start the day.</p></div><div><span>02</span><h3>Room to unwind</h3><p>Soft linens, warm light, and space to settle in.</p></div><div><span>03</span><h3>Local know-how</h3><p>Ask us where to wander, eat, and stay a while.</p></div></div></section>
+    <section class="hotel-gallery"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85" alt="A peaceful outdoor corner for guests"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1100&q=85" alt="A welcoming hotel lounge with warm evening light"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="A relaxed dining room ready for guests"></section>
+    <section class="stay-contact" id="contact"><div><p class="eyebrow">YOUR STAY STARTS HERE</p><h2>Come on in.</h2><p>Tell us when you'd like to visit. We'll get back to you with availability and details.</p><p class="contact-line">Call us: <a href="tel:{{CONTACT}}">{{CONTACT}}</a></p><small>Owner and host: {{OWNER_NAME}}</small></div><form id="stay-form"><label>Your name<input name="guestName" required placeholder="Name"></label><label>Arrival date<input name="arrival" type="date" required></label><label>Guests<select name="guests"><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4+ guests</option></select></label><button type="submit">Ask about a stay ↗</button><p class="form-note" aria-live="polite"></p></form></section>
+    <footer><span>{{BUSINESS_NAME}}</span><span>A personal welcome from {{OWNER_NAME}} · {{CONTACT}}</span></footer>
+  </main>{{OFFER_SCRIPT}}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" data-category="{{CATEGORY}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>{{BUSINESS_NAME}} | Come hungry</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/script.js" defer></script>
+</head>
+<body>
+  <header class="table-nav"><a class="restaurant-logo" href="#home">{{BUSINESS_NAME}}<small>GOOD FOOD, GOOD COMPANY</small></a><nav><a href="#menu">Menu</a><a href="#story">Our table</a><a class="reserve-link" href="#reserve">Find a table</a></nav></header>
+  <main id="home">
+    <section class="food-hero"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=90" alt="A warmly lit restaurant table set for dinner"><div class="hero-shade"></div><div class="food-hero-copy"><p class="eyebrow">A NEIGHBORHOOD TABLE</p><h1>Pull up<br>a chair.</h1><p>Seasonal plates, generous pours, and a seat saved just for you.</p><a class="cream-button" href="#reserve">Make a reservation ↗</a></div></section>
+    <section class="menu-section" id="menu"><div class="menu-intro"><p class="eyebrow">FROM OUR KITCHEN</p><h2>A menu for<br>the middle of the table.</h2><p>Good ingredients, cooked simply, best shared.</p></div><div class="menu-list"><article><div><h3>Whipped ricotta</h3><p>roasted grapes, warm sourdough, garden herbs</p></div><strong>$14</strong></article><article><div><h3>Market greens</h3><p>crisp leaves, shaved apple, cider dressing</p></div><strong>$16</strong></article><article><div><h3>Sunday roast chicken</h3><p>lemon pan jus, little potatoes, something green</p></div><strong>$29</strong></article><article><div><h3>Olive oil cake</h3><p>citrus, softly whipped cream, flaky salt</p></div><strong>$12</strong></article></div></section>
+    <section class="food-gallery"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="A fresh seasonal dish ready to share"><img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=1000&q=85" alt="A colorful plate made from fresh ingredients"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=85" alt="A beautifully plated meal from the kitchen"></section>
+    <section class="reservation" id="reserve"><div><p class="eyebrow">WE'LL SAVE YOU A SEAT</p><h2>Join us at the table.</h2><p>For a reservation, call {{CONTACT}}. We can't wait to have you.</p><a href="tel:{{CONTACT}}">Call {{CONTACT}}</a></div><form id="reservation-form"><label>Your name<input name="guestName" required placeholder="Name for the table"></label><div class="reservation-row"><label>Date<input name="date" type="date" required></label><label>Party size<select name="partySize"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label></div><button type="submit">Request a reservation</button><p class="form-note" aria-live="polite"></p></form></section>
+    <section class="restaurant-story" id="story"><p class="eyebrow">A LITTLE ABOUT US</p><h2>Good food brings us back.</h2><p>{{BUSINESS_NAME}} is a neighborhood restaurant led by {{OWNER_NAME}}. We cook with the seasons and always make room for one more.</p></section>
+    <footer><span>{{BUSINESS_NAME}}</span><span>{{CONTACT}}</span></footer>
+  </main>{{OFFER_SCRIPT}}
+</body>
+</html>

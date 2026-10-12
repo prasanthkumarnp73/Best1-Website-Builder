@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-category="{{CATEGORY}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>{{BUSINESS_NAME}} | Selected work</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/script.js" defer></script>
+</head>
+<body>
+  <header class="folio-nav"><a class="folio-logo" href="#home">{{BUSINESS_NAME}}<span> / SELECTED WORK</span></a><nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header>
+  <main id="home">
+    <section class="folio-hero"><div><p class="eyebrow">INDEPENDENT CREATIVE STUDIO</p><h1>Ideas made<br><em>visible.</em></h1><p>{{OWNER_NAME}} is an independent creative partner helping thoughtful people bring good ideas into the world.</p><a class="folio-button" href="#work">See selected work <span>↓</span></a></div><div class="hero-art"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1100&q=85" alt="A sunlit creative studio desk with works in progress"><span>CURIOUS BY NATURE<br>THOUGHTFUL BY DESIGN</span></div></section>
+    <section class="work-section" id="work"><div class="work-heading"><div><p class="eyebrow">A FEW RECENT FAVORITES</p><h2>Selected work</h2></div><p>A mix of identities, images, and ideas made with good people.</p></div><div class="work-grid"><article class="work-card"><img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1000&q=85" alt="Expressive abstract artwork in warm colors"><div><h3>Soft forms</h3><span>ART DIRECTION · 2025</span></div></article><article class="work-card work-tall"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" alt="Carefully styled fashion collection"><div><h3>Common Thread</h3><span>IDENTITY · 2024</span></div></article><article class="work-card"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1000&q=85" alt="Paint, brushes and tools arranged in an artist's studio"><div><h3>Open studio</h3><span>CAMPAIGN · 2024</span></div></article><article class="work-card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="Quiet landscape at the edge of the day"><div><h3>Field notes</h3><span>PHOTOGRAPHY · 2023</span></div></article></div></section>
+    <section class="about-section" id="about"><div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Good work starts<br>with good listening.</h2></div><div><p>{{OWNER_NAME}} works across visual identity, photography, and digital experiences. Every project begins with a conversation and ends with something made to feel unmistakably yours.</p><a href="#contact">Have a project in mind? →</a></div></section>
+    <section class="contact-section" id="contact"><p class="eyebrow">THE NEXT GOOD THING</p><h2>Let's make something matter.</h2><p>Tell me a little about what you're dreaming up.</p><form id="contact-form"><label>Your name<input name="senderName" required placeholder="Name"></label><label>Your message<textarea name="message" required rows="3" placeholder="A few details about your project"></textarea></label><button type="submit">Send an inquiry ↗</button><p class="form-note" aria-live="polite">Or email directly: {{CONTACT}}</p></form></section>
+    <footer><span>© {{BUSINESS_NAME}} · {{OWNER_NAME}}</span><span>{{CONTACT}}</span></footer>
+  </main>{{OFFER_SCRIPT}}
+</body>
+</html>
