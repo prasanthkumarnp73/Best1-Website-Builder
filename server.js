@@ -117,6 +117,7 @@ function probeVideo(filePath) {
 app.post("/api/slideshow", prepareSlideshowUploads, async (req, res) => {
   const files = req.files || {};
   let outputPath;
+  const renderId = randomUUID();
   try {
     const photos = files.photos || [];
     const video = files.video?.[0];
@@ -142,11 +143,11 @@ app.post("/api/slideshow", prepareSlideshowUploads, async (req, res) => {
     await fsPromises.mkdir(generatedVideosDirectory, { recursive: true });
     const videoId = randomUUID();
     outputPath = path.join(generatedVideosDirectory, `${videoId}.mp4`);
-    const args = ["-y", "-hide_banner", "-loglevel", "error"];
+    const args = ["-y", "-hide_banner", "-loglevel", "error", "-filter_complex_threads", "1"];
     const filterParts = [];
     const normalizedVideo = (inputIndex, label, duration) => {
       const trim = duration ? `,trim=duration=${duration}` : "";
-      filterParts.push(`[${inputIndex}:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,format=yuv420p,setpts=PTS-STARTPTS${trim}[${label}]`);
+      filterParts.push(`[${inputIndex}:v]scale=854:480:force_original_aspect_ratio=decrease,pad=854:480:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=24,format=yuv420p,setpts=PTS-STARTPTS${trim}[${label}]`);
       return `[${label}]`;
     };
 
@@ -212,16 +213,24 @@ app.post("/api/slideshow", prepareSlideshowUploads, async (req, res) => {
     }
 
     args.push(
-      "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
-      "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
+      "-c:v", "libx264", "-preset", "ultrafast", "-crf", "26", "-threads", "1",
+      "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k",
       "-movflags", "+faststart", outputPath
     );
     await runFfmpeg(args);
     return res.json({ url: `/generated/${videoId}.mp4` });
   } catch (error) {
-    console.error("Slideshow rendering failed:", error.message);
+    console.error(`Video rendering failed [${renderId}]:`, error);
     if (outputPath) await fsPromises.rm(outputPath, { force: true }).catch(() => {});
-    return res.status(500).json({ error: "We could not render your video. Check your media files and try again." });
+    const failure = String(error.message || "");
+    const message = /ENOSPC|No space left on device/i.test(failure)
+      ? "The video service is out of temporary storage. Please try again later."
+      : /EACCES|Permission denied|EROFS/i.test(failure)
+        ? "The video service cannot write its output. Please contact the site administrator."
+        : /ENOENT|ffmpeg.*not found/i.test(failure)
+          ? "Video rendering is not installed on the server. Please contact the site administrator."
+          : `We could not render your video. Please retry and share reference ${renderId} with support if it continues.`;
+    return res.status(500).json({ error: message });
   } finally {
     await fsPromises.rm(req.slideshowTemporaryDirectory, { recursive: true, force: true }).catch((error) => {
       console.error("Could not clean slideshow temporary files:", error.message);
