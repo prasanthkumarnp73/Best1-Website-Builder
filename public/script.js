@@ -1,25 +1,9 @@
-const logoVideo = document.querySelector('#animated-logo video');
-const logoImage = document.querySelector('#animated-logo .logo-image');
-const logoFallback = document.querySelector('#animated-logo .logo-fallback');
-
-logoImage.addEventListener('error', () => {
-  logoImage.hidden = true;
-  logoFallback.hidden = false;
-});
-
-logoVideo.addEventListener('canplay', () => {
-  logoVideo.parentElement.classList.add('has-video');
-});
-
-logoVideo.addEventListener('error', () => {
-  logoVideo.parentElement.classList.remove('has-video');
-});
-
 const aiForm = document.querySelector('#ai-form');
 const aiResult = document.querySelector('#ai-result');
 const websiteReady = document.querySelector('#website-ready');
 const websiteLinkResult = document.querySelector('#website-link-result');
 
+if (aiForm) {
 aiForm.addEventListener('submit', (event) => event.preventDefault());
 
 async function sendAIRequest(intent) {
@@ -108,6 +92,7 @@ voiceButton.addEventListener('click', () => {
   });
   recognition.start();
 });
+}
 
 const slideshowForm = document.querySelector('#slideshow-form');
 const slideshowStatus = document.querySelector('#slideshow-status');
@@ -118,6 +103,7 @@ const photoPreviews = document.querySelector('#photo-previews');
 const photoObjectUrls = [];
 const selectedPhotoFiles = [];
 
+if (slideshowForm) {
 photoFiles.addEventListener('change', () => {
   const newFiles = Array.from(photoFiles.files);
   photoFiles.value = '';
@@ -265,3 +251,4 @@ slideshowForm.addEventListener('submit', async (event) => {
     button.disabled = false;
   }
 });
+}
