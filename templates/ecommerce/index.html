@@ -9,13 +9,13 @@
   <title>{{BUSINESS_NAME}} | Thoughtful goods, well made</title>
   <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
   <script src="{{ASSET_PATH}}/banner.js"></script>
-  <script src="{{ASSET_PATH}}/script.js" defer></script>
+  <script src="{{ASSET_PATH}}/commerce.js" defer></script>
 </head>
 <body>
   <header class="store-nav">
     <a class="wordmark" href="#home">{{BUSINESS_NAME}}</a>
     <nav><a href="#shop">Shop</a><a href="#story">Our story</a></nav>
-    <a class="cart" href="#shop">Bag <span id="cart-count">0</span></a>
+    <a class="cart" href="{{CHECKOUT_URL}}" data-checkout>Bag <span id="cart-count">0</span></a>
   </header>
   <main id="home">
     <section class="store-hero">
@@ -24,12 +24,13 @@
     </section>
     <section class="product-section" id="shop"><div class="section-title"><div><p class="overline">MADE FOR YOUR EVERYDAY</p><h2>Shop the collection</h2></div><p>Small-batch favorites, picked for a reason.</p></div>
       <div class="product-grid">
-        <article class="product"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Minimal watch with a clean face"><div><div><h3>Everyday watch</h3><p>Quietly considered design</p></div><strong>$68</strong></div><button data-add>Add to bag</button></article>
-        <article class="product"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80" alt="Structured leather everyday bag"><div><div><h3>Market tote</h3><p>Room for the good stuff</p></div><strong>$54</strong></div><button data-add>Add to bag</button></article>
-        <article class="product"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Reusable bottle in a warm neutral color"><div><div><h3>Daily bottle</h3><p>Your desk-to-trail companion</p></div><strong>$32</strong></div><button data-add>Add to bag</button></article>
-        <article class="product"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=700&q=80" alt="Classic compact film camera"><div><div><h3>Weekend camera</h3><p>Keep the little moments</p></div><strong>$96</strong></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="A considered everyday favorite"><div><div><h3>Everyday favorite</h3><p>A thoughtful pick for every day</p></div></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80" alt="A useful locally selected item"><div><div><h3>Useful finds</h3><p>Room for the good stuff</p></div></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="A well-chosen everyday essential"><div><div><h3>Daily essential</h3><p>Picked with care for your day</p></div></div><button data-add>Add to bag</button></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=700&q=80" alt="A favorite item from the collection"><div><div><h3>Customer favorite</h3><p>A little something to enjoy</p></div></div><button data-add>Add to bag</button></article>
       </div>
     </section>
+    <section class="story" id="order-now"><p class="overline">READY TO PLACE AN ORDER?</p><h2>We’d love to help.</h2><p>Add your favorites to the bag, then get in touch with {{BUSINESS_NAME}} to ask about availability and ordering.</p><a href="{{CHECKOUT_URL}}" data-checkout>Ask about your order ↗</a></section>
     <section class="story" id="story"><p class="overline">A NOTE FROM THE MAKER</p><h2>Buy less. Love it longer.</h2><p>{{OWNER_NAME}} believes the things we keep close should be made with intention. Every piece is chosen for thoughtful details and everyday usefulness.</p><a href="#contact">Questions? Get in touch →</a></section>
     <footer id="contact"><span>© {{BUSINESS_NAME}}</span><span>Questions or orders: {{CONTACT}}</span></footer>
   </main>{{OFFER_SCRIPT}}

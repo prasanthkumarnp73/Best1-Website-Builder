@@ -11,6 +11,7 @@ import dotenv from "dotenv";
 import OpenAI from "openai";
 import ffmpegPath from "ffmpeg-static";
 import multer from "multer";
+import { categoryDefinitions, detectBusinessCategory } from "./lib/business-categories.js";
 
 dotenv.config(); // Load .env file
 
@@ -20,7 +21,7 @@ const port = process.env.PORT || 3000;
 const sitesDirectory = path.join(currentDirectory, "sites");
 const templatesDirectory = path.join(currentDirectory, "templates");
 const generatedVideosDirectory = path.join(currentDirectory, "public", "generated");
-const categories = ["automotive", "business", "ecommerce", "grocery", "hotel", "portfolio", "restaurant", "salon"];
+const categories = Object.keys(categoryDefinitions);
 const imageExtensions = { "image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp" };
 const audioExtensions = {
   "audio/wav": ".wav", "audio/x-wav": ".wav", "audio/mpeg": ".mp3",
@@ -261,37 +262,119 @@ function makeSlug(value) {
   return String(value).toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "my-business";
 }
 
+function escapeAttribute(value = "") {
+  return escapeHtml(value).replace(/`/g, "&#96;");
+}
+
+function assetDirectoryUrl(assetFolder) {
+  return `/sites/${encodeURIComponent(assetFolder)}`;
+}
+
+function getProducts(products, definition) {
+  const suppliedProducts = Array.isArray(products)
+    ? products
+      .filter((product) => product && typeof product === "object" && product.name)
+      .map((product) => ({
+        name: String(product.name).trim(),
+        description: String(product.description || "").trim()
+      }))
+      .filter((product) => product.name)
+      .slice(0, 8)
+    : [];
+  return suppliedProducts.length ? suppliedProducts : definition.products;
+}
+
 function saveGeneratedSite(fileName, details, category) {
   const assetFolder = `${path.basename(fileName, ".html")}-assets`;
   const assetDirectory = path.join(sitesDirectory, assetFolder);
   const templateDirectory = path.join(templatesDirectory, category);
-  const template = fs.readFileSync(path.join(templateDirectory, "index.html"), "utf8");
+  const definition = categoryDefinitions[category];
+  if (!definition) throw new Error(`No template definition exists for category "${category}".`);
+
   fs.mkdirSync(assetDirectory, { recursive: true });
-  for (const assetName of ["style.css", "script.js"]) {
+  for (const assetName of ["style.css", "script.js", "pages.css"]) {
     fs.copyFileSync(path.join(templateDirectory, assetName), path.join(assetDirectory, assetName));
   }
+  fs.cpSync(path.join(templateDirectory, "images"), path.join(assetDirectory, "images"), { recursive: true });
   fs.copyFileSync(path.join(templatesDirectory, "shared", "banner.js"), path.join(assetDirectory, "banner.js"));
+  fs.copyFileSync(path.join(templatesDirectory, "shared", "commerce.js"), path.join(assetDirectory, "commerce.js"));
 
+  const slug = path.basename(fileName, ".html");
+  const pageUrls = {
+    home: `/sites/${encodeURIComponent(fileName)}`,
+    about: `/sites/${encodeURIComponent(`${slug}-about.html`)}`,
+    services: `/sites/${encodeURIComponent(`${slug}-services.html`)}`,
+    contact: `/sites/${encodeURIComponent(`${slug}-contact.html`)}`
+  };
+  const products = getProducts(details.products, definition);
+  const services = details.services.length ? details.services : definition.services;
+  const phoneDigits = details.phone.replace(/\D/g, "");
+  const hasInternationalPhone = /^\+?\d{11,15}$/.test(details.phone.replace(/[\s()-]/g, ""));
+  const phoneLink = phoneDigits ? `tel:${details.phone.replace(/[^\d+]/g, "")}` : pageUrls.contact;
+  const contactEmail = details.email || "";
+  const emailLink = contactEmail ? `mailto:${encodeURIComponent(contactEmail)}` : pageUrls.contact;
+  const whatsappLink = hasInternationalPhone
+    ? `https://wa.me/${phoneDigits}`
+    : emailLink;
+  const navigation = `<nav class="generated-site-nav" aria-label="Business pages"><a href="${pageUrls.home}">Home</a><a href="${pageUrls.about}">About</a><a href="${pageUrls.services}">Services</a><a href="${pageUrls.contact}">Contact Us</a></nav>`;
+  const renderList = (items) => items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  const renderProducts = (items, className) => items.map((product, index) => {
+    const image = `${assetDirectoryUrl(assetFolder)}/images/product-${(index % 3) + 1}.svg`;
+    return `<article class="${className}"><img src="${image}" alt="${escapeAttribute(product.name)}"><div><h3>${escapeHtml(product.name)}</h3><p>${escapeHtml(product.description || "Ask us about this product or service.")}</p><button type="button" data-add data-product="${escapeAttribute(product.name)}">Add to bag</button></div></article>`;
+  }).join("");
   const offer = String(details.specialOffer || "");
   const values = {
     BUSINESS_NAME: escapeHtml(details.businessName),
     OWNER_NAME: escapeHtml(details.ownerName || "Our team"),
-    CONTACT: escapeHtml(details.contact || "Contact us for more information."),
+    CONTACT: escapeHtml(details.contact || details.phone || details.email || "Contact us for more information."),
     CATEGORY: category,
-    ASSET_PATH: `/sites/${assetFolder}`,
-    TAGLINE: escapeHtml(details.tagline || "A better experience, made around you."),
-    DESCRIPTION: escapeHtml(details.description || "Thoughtful service and a warm welcome from our team."),
-    SERVICE_ITEMS: (details.services || []).slice(0, 8).map((service) => `<li>${escapeHtml(service)}</li>`).join(""),
+    CATEGORY_NAME: escapeHtml(definition.name),
+    ASSET_PATH: assetDirectoryUrl(assetFolder),
+    HOME_URL: pageUrls.home,
+    ABOUT_URL: pageUrls.about,
+    SERVICES_URL: pageUrls.services,
+    CONTACT_URL: pageUrls.contact,
+    CHECKOUT_URL: whatsappLink,
+    PHONE: escapeHtml(details.phone || "Contact us for details"),
+    PHONE_LINK: escapeAttribute(phoneLink),
+    EMAIL: escapeHtml(contactEmail || "Contact us for details"),
+    EMAIL_LINK: escapeAttribute(emailLink),
+    ADDRESS: escapeHtml(details.address || "Please contact us for our location."),
+    WHATSAPP_LINK: escapeAttribute(whatsappLink),
+    MAP_URL: escapeAttribute(`https://maps.google.com/maps?q=${encodeURIComponent(details.address || details.businessName)}&output=embed`),
+    TAGLINE: escapeHtml(details.tagline || definition.tagline),
+    DESCRIPTION: escapeHtml(details.description || definition.story),
+    STORY_TITLE: escapeHtml(details.storyTitle || "Good things grow when shared."),
+    STORY: escapeHtml(details.story || definition.story),
+    HOME_PRODUCTS: renderProducts(products.slice(0, 3), "product"),
+    SERVICE_PRODUCTS: renderProducts(products, "catalog-product"),
+    SERVICE_ITEMS: renderList(services.slice(0, 8)),
+    SERVICE_LIST: renderList(services.slice(0, 8)),
+    NAVIGATION: navigation,
     OFFER_SCRIPT: offer ? `<script>showOffer(${JSON.stringify(offer).replace(/</g, "\\u003c")});</script>` : ""
   };
-  const html = template.replace(/{{([A-Z_]+)}}/g, (placeholder, key) => values[key] || "");
-  fs.writeFileSync(path.join(sitesDirectory, fileName), html, "utf8");
-}
+  const render = (template) => template.replace(/\{\{([A-Z_]+)\}\}/g, (placeholder, key) => values[key] ?? "");
+  const homepage = render(fs.readFileSync(path.join(templateDirectory, "index.html"), "utf8"));
+  const homepageWithPageStyles = homepage.includes(`${assetDirectoryUrl(assetFolder)}/pages.css`)
+    ? homepage
+    : homepage.replace("</head>", `<link rel="stylesheet" href="${assetDirectoryUrl(assetFolder)}/pages.css">\n</head>`);
+  const navigableHomepage = homepageWithPageStyles
+    .replace(/<header\b/i, '<header data-generated-pages="true"')
+    .replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/i, navigation)
+    .replace(/href=(["'])mailto:[^"']*\1/gi, `href="${escapeAttribute(emailLink)}"`)
+    .replace(/href=(["'])tel:[^"']*\1/gi, `href="${escapeAttribute(phoneLink)}"`);
+  let imageIndex = 0;
+  const homepageWithLocalImages = navigableHomepage.replace(/(<img\b[^>]*\bsrc=)["']https?:\/\/[^"']+["']/gi, (_match, prefix) => {
+    imageIndex += 1;
+    const imageName = imageIndex === 1 ? "hero.svg" : `product-${((imageIndex - 2) % 3) + 1}.svg`;
+    return `${prefix}"${assetDirectoryUrl(assetFolder)}/images/${imageName}"`;
+  });
+  fs.writeFileSync(path.join(sitesDirectory, path.basename(fileName)), homepageWithLocalImages, "utf8");
 
-function findBusinessFile(businessName) {
-  if (!businessName) return "";
-  const expectedName = `${makeSlug(businessName)}.html`;
-  return fs.existsSync(path.join(sitesDirectory, expectedName)) ? expectedName : "";
+  for (const pageName of ["about", "services", "contact"]) {
+    const pageTemplate = fs.readFileSync(path.join(templateDirectory, `${pageName}.html`), "utf8");
+    fs.writeFileSync(path.join(sitesDirectory, `${slug}-${pageName}.html`), render(pageTemplate), "utf8");
+  }
 }
 
 app.post("/ai", async (req, res) => {
@@ -312,7 +395,7 @@ app.post("/ai", async (req, res) => {
           role: "system",
           content: `${intent === "create"
             ? "The requested intent is CREATE WEBSITE. Always return type website and action create."
-            : "The requested intent is QUESTION. Always return type answer and never create a website."} Return only JSON with fields type (website or answer), action (create), category (automotive, business, ecommerce, grocery, hotel, portfolio, restaurant, salon), businessName, ownerName, contact, specialOffer, tagline, description, services (array of short strings), and answer. Use grocery for fruit shops, produce markets, and grocery stores; automotive for car companies, dealerships, and garages. Use business for other clear business types. Infer the business name from the request when possible. Do not return HTML, markdown, or code. Never invent factual details such as a real address, phone, prices, or credentials.`
+            : "The requested intent is QUESTION. Always return type answer and never create a website."} Return only JSON with fields type (website or answer), action (create), category (one of ${categories.join(", ")}), businessName, ownerName, phone, email, address, contact, specialOffer, tagline, description, story, products (array of objects with name and description), services (array of short strings), and answer. Select the most specific category that matches the business described, such as cycle-shop for a bicycle shop, idly-shop for an idly or dosa shop, fruit-shop for a fruit shop, and roadside-shop for a roadside vendor. Infer the business name from the request when possible. Use category-specific products and services. Do not return HTML, markdown, or code. Never invent factual details such as a real address, phone, email, prices, or credentials; leave unknown details empty. Do not invent product prices.`
         },
         { role: "user", content: prompt }
       ]
@@ -328,23 +411,41 @@ app.post("/ai", async (req, res) => {
       return res.status(502).json({ error: "We could not create a website from that description. Please include your business type or name." });
     }
 
-    const category = categories.includes(String(result.category || "").toLowerCase())
-      ? String(result.category).toLowerCase()
-      : "business";
+    const modelCategory = String(result.category || "").toLowerCase();
+    const category = detectBusinessCategory(prompt)
+      || (categories.includes(modelCategory) ? modelCategory : "general-business");
     const businessName = String(result.businessName || "My Business").trim();
     const details = {
       businessName,
       ownerName: String(result.ownerName || "").trim(),
       contact: String(result.contact || "").trim(),
+      phone: String(result.phone || "").trim(),
+      email: String(result.email || "").trim(),
+      address: String(result.address || "").trim(),
       specialOffer: String(result.specialOffer || "").trim(),
-      tagline: String(result.tagline || "").trim(),
+      tagline: String(result.tagline || categoryDefinitions[category].tagline).trim(),
       description: String(result.description || "").trim(),
+      story: String(result.story || "").trim(),
+      storyTitle: "",
+      products: Array.isArray(result.products) ? result.products.slice(0, 8) : [],
       services: Array.isArray(result.services) ? result.services.map(String).slice(0, 8) : []
     };
 
     const fileName = `${makeSlug(businessName)}.html`;
     saveGeneratedSite(fileName, details, category);
-    return res.json({ type: "website", intent: "create", websiteCategory: category, fileName, url: `/sites/${encodeURIComponent(fileName)}` });
+    return res.json({
+      type: "website",
+      intent: "create",
+      websiteCategory: category,
+      fileName,
+      url: `/sites/${encodeURIComponent(fileName)}`,
+      pages: {
+        home: `/sites/${encodeURIComponent(fileName)}`,
+        about: `/sites/${encodeURIComponent(`${makeSlug(businessName)}-about.html`)}`,
+        services: `/sites/${encodeURIComponent(`${makeSlug(businessName)}-services.html`)}`,
+        contact: `/sites/${encodeURIComponent(`${makeSlug(businessName)}-contact.html`)}`
+      }
+    });
   } catch (err) {
     console.error("AI request failed:", { status: err.status, code: err.code });
     if (err.status === 404 || err.code === "model_not_found") {
@@ -360,4 +461,4 @@ app.post("/ai", async (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
+export const server = app.listen(port, () => console.log(`Server running at http://localhost:${port}`));

@@ -1,0 +1,797 @@
+{
+  "automotive": {
+    "name": "Automotive",
+    "keywords": [
+      "automotive",
+      "car dealership",
+      "car dealer",
+      "garage",
+      "auto repair",
+      "vehicle repair"
+    ],
+    "tagline": "Find the right road for your next drive.",
+    "story": "We help drivers find the right vehicle and dependable support for every journey.",
+    "products": [
+      {
+        "name": "Vehicle sales",
+        "description": "Explore vehicles selected for your needs."
+      },
+      {
+        "name": "Vehicle servicing",
+        "description": "Practical care to keep you moving."
+      },
+      {
+        "name": "Parts and accessories",
+        "description": "Useful extras for the road ahead."
+      }
+    ],
+    "services": [
+      "Vehicle sales and enquiries",
+      "Maintenance and repair",
+      "Parts and accessories"
+    ],
+    "color": "#537b79"
+  },
+  "advocate-office": {
+    "name": "Advocate Office",
+    "keywords": ["advocate office", "law office", "lawyer", "legal office", "attorney"],
+    "tagline": "Clear guidance for the road ahead.",
+    "story": "We offer a welcoming place to discuss legal questions and learn about the support available to you.",
+    "products": [
+      { "name": "Legal consultation", "description": "Contact our office to discuss your enquiry." },
+      { "name": "Legal services", "description": "Learn more about the areas we support." },
+      { "name": "Client appointments", "description": "Get in touch to ask about scheduling." }
+    ],
+    "services": ["Legal consultations and appointments", "Client and case enquiries", "Information about our legal services"],
+    "color": "#6d777f"
+  },
+  "bakery": {
+    "name": "Bakery",
+    "keywords": [
+      "bakery",
+      "baker",
+      "bake shop",
+      "bread shop",
+      "cake shop"
+    ],
+    "tagline": "Fresh from our oven, made for your table.",
+    "story": "We make fresh bakes with care, bringing a little more warmth to everyday moments.",
+    "products": [
+      {
+        "name": "Freshly baked breads",
+        "description": "A soft, golden favorite for the table."
+      },
+      {
+        "name": "Celebration cakes",
+        "description": "Made for birthdays and happy gatherings."
+      },
+      {
+        "name": "Pastries and treats",
+        "description": "A little something for your tea break."
+      }
+    ],
+    "services": [
+      "Fresh bread and daily bakes",
+      "Custom cakes and celebration orders",
+      "Pastries, snacks, and takeaway"
+    ],
+    "color": "#b87552"
+  },
+  "bangles-earrings": {
+    "name": "Bangles & Earrings",
+    "keywords": [
+      "bangles and earrings",
+      "bangles earrings",
+      "bangle shop",
+      "bangles store",
+      "earring shop",
+      "earrings store",
+      "jewelry store",
+      "jewellery store",
+      "jewelry shop",
+      "jewellery shop"
+    ],
+    "tagline": "Little details. A little more you.",
+    "story": "We bring together beautiful accessories for celebrations, everyday style, and thoughtful gifting.",
+    "products": [
+      {
+        "name": "Everyday bangles",
+        "description": "Easy-to-wear styles for every day."
+      },
+      {
+        "name": "Statement earrings",
+        "description": "A favorite finishing touch for your look."
+      },
+      {
+        "name": "Gift-ready jewelry",
+        "description": "Thoughtful picks for someone special."
+      }
+    ],
+    "services": [
+      "Bangles and bracelets",
+      "Earrings and jewelry sets",
+      "Gifts and accessories"
+    ],
+    "color": "#a36d91"
+  },
+  "business": {
+    "name": "Business",
+    "keywords": [
+      "business service",
+      "local business",
+      "consultant",
+      "consulting"
+    ],
+    "tagline": "Thoughtful work. Human service.",
+    "story": "We are an independent business built around dependable service and thoughtful work.",
+    "products": [
+      {
+        "name": "Our services",
+        "description": "Practical support shaped around your needs."
+      },
+      {
+        "name": "Personal consultation",
+        "description": "A helpful conversation to get started."
+      },
+      {
+        "name": "Business solutions",
+        "description": "Reliable help for your next project."
+      }
+    ],
+    "services": [
+      "Business services and consultations",
+      "Project support",
+      "Personalized assistance"
+    ],
+    "color": "#47785e"
+  },
+  "civil-construction": {
+    "name": "Civil Construction",
+    "keywords": [
+      "civil construction",
+      "construction company",
+      "construction contractor",
+      "building contractor",
+      "civil engineering",
+      "builder"
+    ],
+    "tagline": "Building with care. Grounded in trust.",
+    "story": "We bring thoughtful planning, skilled work, and clear communication to every building project.",
+    "products": [
+      {
+        "name": "Residential projects",
+        "description": "Planning and construction for your home."
+      },
+      {
+        "name": "Commercial projects",
+        "description": "Spaces built around the way you work."
+      },
+      {
+        "name": "Renovations",
+        "description": "Practical improvements for existing spaces."
+      }
+    ],
+    "services": [
+      "Residential construction",
+      "Commercial construction",
+      "Renovation and project planning"
+    ],
+    "color": "#8b7553"
+  },
+  "clothing": {
+    "name": "Clothing",
+    "keywords": [
+      "clothing",
+      "clothes shop",
+      "clothing shop",
+      "apparel",
+      "fashion boutique",
+      "garment shop",
+      "fashion store"
+    ],
+    "tagline": "Find pieces that feel like you.",
+    "story": "We bring together wearable styles and thoughtful favorites for everyday life and special occasions.",
+    "products": [
+      {
+        "name": "Everyday essentials",
+        "description": "Comfortable pieces for your daily wardrobe."
+      },
+      {
+        "name": "New-season styles",
+        "description": "Fresh finds to make your own."
+      },
+      {
+        "name": "Occasion wear",
+        "description": "Considered looks for your next celebration."
+      }
+    ],
+    "services": [
+      "Everyday clothing and apparel",
+      "New arrivals and seasonal collections",
+      "Personal shopping assistance"
+    ],
+    "color": "#9a6e67"
+  },
+  "cycle-shop": {
+    "name": "Cycle Shop",
+    "keywords": [
+      "cycle shop",
+      "cycle store",
+      "bicycle shop",
+      "bike shop",
+      "bicycle store",
+      "cycling store"
+    ],
+    "tagline": "Find your next favorite ride.",
+    "story": "We help riders choose, care for, and enjoy the right bicycle for the roads and trails ahead.",
+    "products": [
+      {
+        "name": "City bicycles",
+        "description": "Comfortable rides for everyday journeys."
+      },
+      {
+        "name": "Cycling accessories",
+        "description": "Useful gear for your next ride."
+      },
+      {
+        "name": "Workshop services",
+        "description": "Care and repairs to keep you rolling."
+      }
+    ],
+    "services": [
+      "Bicycle sales and enquiries",
+      "Accessories and riding gear",
+      "Repairs, fitting, and maintenance"
+    ],
+    "color": "#588367"
+  },
+  "doctor-clinic": {
+    "name": "Doctor & Clinic",
+    "keywords": [
+      "doctor clinic",
+      "clinic",
+      "medical clinic",
+      "doctor's office",
+      "doctors office",
+      "health clinic",
+      "doctor"
+    ],
+    "tagline": "Care that starts with listening.",
+    "story": "Our clinic is here to offer a welcoming place to ask questions and access professional care.",
+    "products": [
+      {
+        "name": "Appointments",
+        "description": "Get in touch to ask about availability."
+      },
+      {
+        "name": "General consultations",
+        "description": "Speak with our care team about your health."
+      },
+      {
+        "name": "Patient support",
+        "description": "Helpful information for your next visit."
+      }
+    ],
+    "services": [
+      "General consultations",
+      "Appointment enquiries",
+      "Patient information and follow-up"
+    ],
+    "color": "#588992"
+  },
+  "electronics": {
+    "name": "Electronics",
+    "keywords": [
+      "electronics",
+      "electronics store",
+      "electronic shop",
+      "gadget shop",
+      "computer shop",
+      "mobile shop",
+      "phone shop"
+    ],
+    "tagline": "Useful technology for what’s next.",
+    "story": "We make it easier to discover practical devices and get help choosing the right technology.",
+    "products": [
+      {
+        "name": "Mobile phones",
+        "description": "Explore devices for work and everyday life."
+      },
+      {
+        "name": "Laptops and computers",
+        "description": "Find a setup for how you work and create."
+      },
+      {
+        "name": "Gadgets and accessories",
+        "description": "Helpful extras for your everyday tech."
+      }
+    ],
+    "services": [
+      "Mobiles, laptops, and gadgets",
+      "Accessories and device enquiries",
+      "Product guidance and support"
+    ],
+    "color": "#6575a1"
+  },
+  "ecommerce": {
+    "name": "Online Store",
+    "keywords": [
+      "online store",
+      "ecommerce",
+      "e-commerce",
+      "online shop"
+    ],
+    "tagline": "Good things, chosen with care.",
+    "story": "We bring together useful finds and thoughtful favorites for everyday life.",
+    "products": [
+      {
+        "name": "Customer favorites",
+        "description": "A few of the things people love."
+      },
+      {
+        "name": "New arrivals",
+        "description": "Fresh finds, recently added."
+      },
+      {
+        "name": "Everyday essentials",
+        "description": "Useful things for your day-to-day."
+      }
+    ],
+    "services": [
+      "Browse our collection",
+      "Order enquiries",
+      "Customer support"
+    ],
+    "color": "#987658"
+  },
+  "fancy-store": {
+    "name": "Fancy Store",
+    "keywords": [
+      "fancy store",
+      "gift shop",
+      "gift store",
+      "decor shop",
+      "accessories shop",
+      "novelty shop"
+    ],
+    "tagline": "Find a little something special.",
+    "story": "We collect thoughtful gifts, cheerful accessories, and small details that make a house feel like home.",
+    "products": [
+      {
+        "name": "Thoughtful gifts",
+        "description": "A lovely find for someone you care about."
+      },
+      {
+        "name": "Home and decor",
+        "description": "Small touches to brighten your space."
+      },
+      {
+        "name": "Accessories",
+        "description": "Everyday details with a little personality."
+      }
+    ],
+    "services": [
+      "Gift items and special finds",
+      "Home decor and accessories",
+      "Help choosing a thoughtful present"
+    ],
+    "color": "#a77c67"
+  },
+  "fish-market": {
+    "name": "Fish Market",
+    "keywords": [
+      "fish market",
+      "seafood market",
+      "fish shop",
+      "seafood shop",
+      "fishmonger",
+      "fish stall"
+    ],
+    "tagline": "Fresh from the coast to your kitchen.",
+    "story": "We bring fresh seafood and friendly market service to the neighborhood, every day.",
+    "products": [
+      {
+        "name": "Fresh catch",
+        "description": "Ask us what is fresh at the market today."
+      },
+      {
+        "name": "Local seafood",
+        "description": "A changing selection for your next meal."
+      },
+      {
+        "name": "Market favorites",
+        "description": "Fresh picks prepared with care."
+      }
+    ],
+    "services": [
+      "Fresh fish and seafood",
+      "Daily market availability",
+      "Preparation and order enquiries"
+    ],
+    "color": "#578490"
+  },
+  "fruit-shop": {
+    "name": "Fruit Shop",
+    "keywords": [
+      "fruit shop",
+      "fruit store",
+      "fruit stall",
+      "fresh fruit",
+      "fruit market"
+    ],
+    "tagline": "Fresh picks. Full of life.",
+    "story": "We bring fresh fruit, friendly service, and a little more color to everyday meals.",
+    "products": [
+      {
+        "name": "Seasonal fruit",
+        "description": "A fresh selection that changes with the season."
+      },
+      {
+        "name": "Fruit baskets",
+        "description": "A colorful gift for a special occasion."
+      },
+      {
+        "name": "Everyday favorites",
+        "description": "Fresh fruit for your home and table."
+      }
+    ],
+    "services": [
+      "Fresh and seasonal fruit",
+      "Fruit baskets and gifting",
+      "Daily market availability"
+    ],
+    "color": "#9b8551"
+  },
+  "general-business": {
+    "name": "General Business",
+    "keywords": [
+      "general business",
+      "my business",
+      "small business",
+      "local shop"
+    ],
+    "tagline": "Good work starts with a good conversation.",
+    "story": "We are here to make it easy to learn about our business and get in touch.",
+    "products": [
+      {
+        "name": "Our services",
+        "description": "Explore the ways we can help."
+      },
+      {
+        "name": "Personal support",
+        "description": "Friendly answers from our team."
+      },
+      {
+        "name": "Business enquiries",
+        "description": "Tell us what you are looking for."
+      }
+    ],
+    "services": [
+      "Business services and enquiries",
+      "Personalized support",
+      "Appointments and consultations"
+    ],
+    "color": "#5b8067"
+  },
+  "grocery": {
+    "name": "Grocery",
+    "keywords": [
+      "grocery",
+      "groceries",
+      "supermarket",
+      "provision store",
+      "kirana store"
+    ],
+    "tagline": "Fresh picks for the everyday.",
+    "story": "We bring everyday groceries, fresh essentials, and friendly neighborhood service together.",
+    "products": [
+      {
+        "name": "Fresh vegetables",
+        "description": "Everyday produce picked for your kitchen."
+      },
+      {
+        "name": "Pantry essentials",
+        "description": "The things that make a meal feel like home."
+      },
+      {
+        "name": "Household favorites",
+        "description": "Useful essentials for your everyday list."
+      }
+    ],
+    "services": [
+      "Fresh produce and groceries",
+      "Pantry and household essentials",
+      "Order and availability enquiries"
+    ],
+    "color": "#728b51"
+  },
+  "hotel": {
+    "name": "Hotel",
+    "keywords": [
+      "hotel",
+      "guest house",
+      "guesthouse",
+      "resort",
+      "lodging"
+    ],
+    "tagline": "A warm welcome, wherever you’re headed.",
+    "story": "We create a welcoming place to rest, recharge, and feel at home while you are away.",
+    "products": [
+      {
+        "name": "Comfortable rooms",
+        "description": "A restful place to settle in."
+      },
+      {
+        "name": "Dining and hospitality",
+        "description": "Thoughtful comforts during your stay."
+      },
+      {
+        "name": "Plan your visit",
+        "description": "Contact us to ask about your stay."
+      }
+    ],
+    "services": [
+      "Room and stay enquiries",
+      "Dining and guest services",
+      "Booking assistance"
+    ],
+    "color": "#a17d54"
+  },
+  "idly-shop": {
+    "name": "Idly Shop",
+    "keywords": [
+      "idly shop",
+      "idli shop",
+      "dosa shop",
+      "south indian tiffin",
+      "tiffin shop"
+    ],
+    "tagline": "Warm plates. Familiar favorites.",
+    "story": "We serve comforting South Indian favorites made for slow mornings and quick, satisfying meals.",
+    "products": [
+      {
+        "name": "Idly and chutney",
+        "description": "Soft, warm idly with freshly made chutney."
+      },
+      {
+        "name": "Crisp dosa",
+        "description": "A golden dosa, served hot and fresh."
+      },
+      {
+        "name": "Sambar and tiffin",
+        "description": "Comforting favorites made for sharing."
+      }
+    ],
+    "services": [
+      "Idly, dosa, and South Indian tiffin",
+      "Takeaway and order enquiries",
+      "Fresh chutney and sambar"
+    ],
+    "color": "#9a8152"
+  },
+  "pharmacy": {
+    "name": "Pharmacy",
+    "keywords": [
+      "pharmacy",
+      "chemist",
+      "medical store",
+      "drugstore",
+      "medicine shop"
+    ],
+    "tagline": "Here to help you feel your best.",
+    "story": "We are here with helpful service and everyday health essentials for our community.",
+    "products": [
+      {
+        "name": "Health essentials",
+        "description": "Ask our team about everyday health products."
+      },
+      {
+        "name": "Personal care",
+        "description": "Useful care items for home and travel."
+      },
+      {
+        "name": "Wellness products",
+        "description": "Explore our range of wellness essentials."
+      }
+    ],
+    "services": [
+      "Pharmacy and health product enquiries",
+      "Personal care and wellness items",
+      "Friendly in-store assistance"
+    ],
+    "color": "#588b7e"
+  },
+  "portfolio": {
+    "name": "Portfolio",
+    "keywords": [
+      "portfolio",
+      "freelancer",
+      "creative studio",
+      "photographer"
+    ],
+    "tagline": "A little about the work we love.",
+    "story": "We believe good work begins with curiosity, craft, and close collaboration.",
+    "products": [
+      {
+        "name": "Selected work",
+        "description": "A few projects and ideas we are proud of."
+      },
+      {
+        "name": "Our approach",
+        "description": "Thoughtful work shaped around your goals."
+      },
+      {
+        "name": "Let’s collaborate",
+        "description": "Get in touch to talk about a project."
+      }
+    ],
+    "services": [
+      "Creative projects and collaborations",
+      "Portfolio and project enquiries",
+      "Consultation and planning"
+    ],
+    "color": "#77729a"
+  },
+  "restaurant": {
+    "name": "Restaurant",
+    "keywords": [
+      "restaurant",
+      "cafe",
+      "coffee shop",
+      "diner",
+      "food truck"
+    ],
+    "tagline": "Good food. Better when shared.",
+    "story": "We bring people together over carefully prepared food and a warm welcome.",
+    "products": [
+      {
+        "name": "House favorites",
+        "description": "A few much-loved dishes from our kitchen."
+      },
+      {
+        "name": "Something seasonal",
+        "description": "A fresh idea inspired by the season."
+      },
+      {
+        "name": "Something sweet",
+        "description": "A little treat to finish your meal."
+      }
+    ],
+    "services": [
+      "Dine-in and takeaway",
+      "Menu and reservation enquiries",
+      "Catering and special occasions"
+    ],
+    "color": "#a15f49"
+  },
+  "roadside-shop": {
+    "name": "Roadside Shop",
+    "keywords": [
+      "roadside shop",
+      "roadside stall",
+      "roadside vendor",
+      "street vendor",
+      "street stall",
+      "street shop",
+      "local vendor"
+    ],
+    "tagline": "Local favorites, right around the corner.",
+    "story": "We are a neighborhood stop for everyday finds, familiar service, and the little things you need.",
+    "products": [
+      {
+        "name": "Local favorites",
+        "description": "Popular picks from our neighborhood stall."
+      },
+      {
+        "name": "Everyday essentials",
+        "description": "Useful things for your day, close at hand."
+      },
+      {
+        "name": "Fresh finds",
+        "description": "Ask us what has just arrived today."
+      }
+    ],
+    "services": [
+      "Everyday goods and local favorites",
+      "Fresh daily finds",
+      "Friendly neighborhood service"
+    ],
+    "color": "#b8754d"
+  },
+  "salon": {
+    "name": "Salon",
+    "keywords": [
+      "salon",
+      "saloon",
+      "hair salon",
+      "beauty salon",
+      "barber shop",
+      "spa"
+    ],
+    "tagline": "A little time, just for you.",
+    "story": "We make space for you to unwind and feel your best with thoughtful care and a personal touch.",
+    "products": [
+      {
+        "name": "Cut and styling",
+        "description": "A fresh look shaped around your style."
+      },
+      {
+        "name": "Beauty and care",
+        "description": "Thoughtful treatments for your self-care day."
+      },
+      {
+        "name": "Relax and restore",
+        "description": "A little time out, made just for you."
+      }
+    ],
+    "services": [
+      "Haircuts and styling",
+      "Beauty and spa treatments",
+      "Appointments and consultations"
+    ],
+    "color": "#a96f7b"
+  },
+  "toy-shop": {
+    "name": "Toy Shop",
+    "keywords": [
+      "toy shop",
+      "toy store",
+      "kids store",
+      "children's toy",
+      "children toy"
+    ],
+    "tagline": "A little more play in every day.",
+    "story": "We bring together joyful toys and games for little imaginations and big family moments.",
+    "products": [
+      {
+        "name": "Creative play",
+        "description": "Fun finds for curious young minds."
+      },
+      {
+        "name": "Games for everyone",
+        "description": "Bring friends and family together to play."
+      },
+      {
+        "name": "Little favorites",
+        "description": "Thoughtful picks for little ones."
+      }
+    ],
+    "services": [
+      "Toys and games for different ages",
+      "Creative play and learning",
+      "Gift recommendations"
+    ],
+    "color": "#858b50"
+  },
+  "watch-shop": {
+    "name": "Watch Shop",
+    "keywords": [
+      "watch shop",
+      "watch store",
+      "clock shop",
+      "timepiece store"
+    ],
+    "tagline": "Find a little more time for your style.",
+    "story": "We bring together considered timepieces and helpful service to find a watch that feels right for you.",
+    "products": [
+      {
+        "name": "Everyday watches",
+        "description": "Comfortable styles for every day."
+      },
+      {
+        "name": "Classic timepieces",
+        "description": "Timeless details, chosen with care."
+      },
+      {
+        "name": "Watch accessories",
+        "description": "Straps and extras for your favorite watch."
+      }
+    ],
+    "services": [
+      "Watches and clocks",
+      "Straps and accessories",
+      "Product and repair enquiries"
+    ],
+    "color": "#77805f"
+  }
+}

@@ -5,7 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "templates:build": "node scripts/build-business-templates.js",
+    "test": "node --test"
   },
   "dependencies": {
     "body-parser": "^1.20.3",

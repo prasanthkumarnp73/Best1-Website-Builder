@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-category="{{CATEGORY}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>Shop &amp; Services | {{BUSINESS_NAME}}</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <link rel="stylesheet" href="{{ASSET_PATH}}/pages.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/commerce.js" defer></script>
+</head>
+<body class="catalog-page">
+  <header class="catalog-nav"><a href="{{HOME_URL}}">{{BUSINESS_NAME}}</a>{{NAVIGATION}}</header>
+  <main><section class="catalog-page-hero"><p>{{CATEGORY_NAME}} · THE COLLECTION</p><h1>Shop &amp; Services</h1><div>{{TAGLINE}}</div></section>
+    <section class="catalog-products"><div class="catalog-section-heading"><div><p class="catalog-kicker">CHOSEN FOR YOU</p><h2>Explore our collection.</h2></div><p>Ask us about availability, custom orders, and services.</p></div><div class="catalog-product-grid">{{SERVICE_PRODUCTS}}</div></section>
+    <section class="catalog-service-list"><div><p class="catalog-kicker">HERE WHEN YOU NEED US</p><h2>More ways we can help.</h2></div><ul>{{SERVICE_LIST}}</ul></section>
+    <section class="catalog-cta"><p class="catalog-kicker">READY TO ORDER?</p><h2>We’re happy to help.</h2><a class="catalog-button" href="{{CHECKOUT_URL}}" data-checkout>Ask about your order <span>→</span></a></section></main>
+  <footer class="catalog-footer"><a href="{{HOME_URL}}">{{BUSINESS_NAME}}</a><span>Led by {{OWNER_NAME}} · {{CONTACT}}</span><a href="{{CONTACT_URL}}">Contact us →</a></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-category="fruit-shop">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="site-business-name" content="{{BUSINESS_NAME}}">
+  <meta name="site-owner-name" content="{{OWNER_NAME}}">
+  <meta name="site-contact" content="{{CONTACT}}">
+  <title>{{BUSINESS_NAME}} | {{CATEGORY_NAME}}</title>
+  <link rel="stylesheet" href="{{ASSET_PATH}}/style.css">
+  <script src="{{ASSET_PATH}}/banner.js"></script>
+  <script src="{{ASSET_PATH}}/script.js" defer></script>
+</head>
+<body>
+  <header class="store-nav">
+    <a class="wordmark" href="{{HOME_URL}}">{{BUSINESS_NAME}}</a>
+    <nav><a href="{{SERVICES_URL}}">Shop &amp; services</a><a href="{{ABOUT_URL}}">Our story</a><a href="{{CONTACT_URL}}">Contact</a></nav>
+    <a class="cart" href="{{CHECKOUT_URL}}" data-checkout>Bag <span id="cart-count">0</span></a>
+  </header>
+  <main id="home">
+    <section class="store-hero">
+      <div class="hero-copy"><p class="overline">{{CATEGORY_NAME}} · MADE FOR YOU</p><h1>{{TAGLINE}}</h1><p>{{DESCRIPTION}}</p><a class="dark-button" href="{{SERVICES_URL}}">Explore our collection <span>↘</span></a><small>Locally led by {{OWNER_NAME}}</small></div>
+      <img src="{{ASSET_PATH}}/images/hero.svg" alt="{{CATEGORY_NAME}} products and services from {{BUSINESS_NAME}}">
+    </section>
+    <section class="product-section" id="shop"><div class="section-title"><div><p class="overline">A FEW CUSTOMER FAVORITES</p><h2>Made for your everyday.</h2></div><p>Thoughtful picks from {{BUSINESS_NAME}}.</p></div>
+      <div class="product-grid">{{HOME_PRODUCTS}}</div>
+    </section>
+    <section class="story" id="order-now"><p class="overline">READY TO PLACE AN ORDER?</p><h2>We’d love to help.</h2><p>Add your favorites to the bag, then get in touch with {{BUSINESS_NAME}} to ask about availability and ordering.</p><a href="{{CHECKOUT_URL}}" data-checkout>Ask about your order ↗</a></section>
+    <section class="story" id="story"><p class="overline">A NOTE FROM {{OWNER_NAME}}</p><h2>{{STORY_TITLE}}</h2><p>{{STORY}}</p><a href="{{ABOUT_URL}}">A little more about us →</a></section>
+    <footer><span>© {{BUSINESS_NAME}}</span><span>Questions or orders: <a href="{{CONTACT_URL}}">{{CONTACT}}</a></span></footer>
+  </main>{{OFFER_SCRIPT}}
+</body>
+</html>
