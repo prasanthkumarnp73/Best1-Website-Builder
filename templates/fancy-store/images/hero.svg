@@ -1,20 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc" data-scene="gift">
   <title id="title">Fancy Store from FANCY STORE</title>
-  <desc id="desc">A custom fancy store illustration for your local business website.</desc>
+  <desc id="desc">A locally generated gift illustration for fancy store.</desc>
   <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfaf6"/><stop offset="1" stop-color="#e7bf77"/></linearGradient></defs>
   <rect width="720" height="560" fill="url(#wash)"/>
-  <circle cx="564" cy="134" r="94" fill="#a77c67" opacity=".12"/>
-  <circle cx="122" cy="453" r="106" fill="#e7bf77" opacity=".3"/>
-  <path d="M0 430 Q190 345 358 433 T720 412 V560 H0Z" fill="#a77c67" opacity=".15"/>
-  <rect x="206" y="122" width="308" height="294" rx="12" fill="#fff" opacity=".86"/>
-  <rect x="229" y="146" width="262" height="185" rx="8" fill="#a77c67" opacity=".16"/>
-  <circle cx="116" cy="237" r="49" fill="#a77c67" opacity=".82"/>
-  <circle cx="208" cy="227" r="33" fill="#e7bf77"/>
-  <circle cx="274" cy="254" r="43" fill="#f4e8cb"/>
-  <path d="M95 242q21 -41 42 0v18h-42z" fill="#fff" opacity=".8"/>
-  <path d="M189 230q19 -30 38 0v17h-38z" fill="#fff" opacity=".78"/>
-  <path d="M255 258q19 -36 38 0v18h-38z" fill="#a77c67" opacity=".68"/>
-  <rect x="246" y="350" width="228" height="8" rx="4" fill="#a77c67" opacity=".2"/>
-  <rect x="246" y="370" width="157" height="7" rx="3.5" fill="#a77c67" opacity=".13"/>
-  <text x="360" y="466" text-anchor="middle" fill="#a77c67" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">FANCY STORE</text>
+  <circle cx="580" cy="112" r="96" fill="#a77c67" opacity=".1"/>
+  <circle cx="124" cy="443" r="97" fill="#e7bf77" opacity=".28"/>
+  <path d="M0 444q173-64 350-6t370-3v125H0z" fill="#a77c67" opacity=".12"/>
+  <rect x="142" y="98" width="436" height="344" rx="26" fill="#fff" opacity=".5"/>
+  <path d="M222 272h276v163H222z" fill="#e7bf77" stroke="#a77c67" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M206 238h308v62H206z" fill="#fff" stroke="#a77c67" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M360 238v197" fill="none" stroke="#a77c67" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M360 238c-97-4-99-82-45-75 34 4 45 75 45 75zm0 0c97-4 99-82 45-75-34 4-45 75-45 75" fill="#e7bf77" stroke="#a77c67" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="490" text-anchor="middle" fill="#a77c67" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">FANCY STORE</text>
 </svg>

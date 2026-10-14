@@ -1,20 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc" data-scene="creative">
   <title id="title">Let’s collaborate from PORTFOLIO</title>
-  <desc id="desc">A custom portfolio illustration for your local business website.</desc>
+  <desc id="desc">A locally generated creative illustration for portfolio.</desc>
   <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfaf6"/><stop offset="1" stop-color="#e7bf77"/></linearGradient></defs>
   <rect width="720" height="560" fill="url(#wash)"/>
-  <circle cx="564" cy="134" r="94" fill="#77729a" opacity=".12"/>
-  <circle cx="122" cy="453" r="106" fill="#e7bf77" opacity=".3"/>
-  <path d="M0 430 Q190 345 358 433 T720 412 V560 H0Z" fill="#77729a" opacity=".15"/>
-  <rect x="206" y="122" width="308" height="294" rx="12" fill="#fff" opacity=".86"/>
-  <rect x="229" y="146" width="262" height="185" rx="8" fill="#77729a" opacity=".16"/>
-  <circle cx="194" cy="237" r="49" fill="#77729a" opacity=".82"/>
-  <circle cx="286" cy="227" r="33" fill="#e7bf77"/>
-  <circle cx="352" cy="254" r="43" fill="#f4e8cb"/>
-  <path d="M173 242q21 -41 42 0v18h-42z" fill="#fff" opacity=".8"/>
-  <path d="M267 230q19 -30 38 0v17h-38z" fill="#fff" opacity=".78"/>
-  <path d="M333 258q19 -36 38 0v18h-38z" fill="#77729a" opacity=".68"/>
-  <rect x="246" y="350" width="228" height="8" rx="4" fill="#77729a" opacity=".2"/>
-  <rect x="246" y="370" width="157" height="7" rx="3.5" fill="#77729a" opacity=".13"/>
-  <text x="360" y="466" text-anchor="middle" fill="#77729a" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">PORTFOLIO</text>
+  <circle cx="580" cy="112" r="96" fill="#77729a" opacity=".1"/>
+  <circle cx="124" cy="443" r="97" fill="#e7bf77" opacity=".28"/>
+  <path d="M0 444q173-64 350-6t370-3v125H0z" fill="#77729a" opacity=".12"/>
+  <rect x="142" y="98" width="436" height="344" rx="26" fill="#fff" opacity=".5"/>
+  <rect x="224" y="193" width="272" height="220" rx="12" fill="#fff" stroke="#77729a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M265 354q41-114 91-40t95-75" fill="none" stroke="#e7bf77" stroke-width="20" stroke-linecap="round"/><circle cx="285" cy="245" r="13" fill="#e7bf77"/><circle cx="328" cy="245" r="13" fill="#77729a"/><circle cx="371" cy="245" r="13" fill="#e5bd64"/><path d="M253 431h214" fill="none" stroke="#77729a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="490" text-anchor="middle" fill="#77729a" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">PORTFOLIO</text>
 </svg>

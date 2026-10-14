@@ -21,10 +21,26 @@ test("all requested business categories are defined and have four-page templates
       assert.ok(fs.existsSync(path.join(categoryDirectory, fileName)), `Missing ${category}/${fileName}`);
     }
     assert.ok(fs.existsSync(path.join(categoryDirectory, "images", "hero.svg")), `Missing ${category} hero image`);
+    const heroArtwork = fs.readFileSync(path.join(categoryDirectory, "images", "hero.svg"), "utf8");
+    assert.match(heroArtwork, /data-scene="[^"]+"/, `Missing category-specific artwork for ${category}`);
     for (let index = 1; index <= 3; index += 1) {
       assert.ok(fs.existsSync(path.join(categoryDirectory, "images", `product-${index}.svg`)), `Missing ${category} product image ${index}`);
     }
   }
+});
+
+test("each business category has its own offline-ready hero illustration", () => {
+  const scenes = new Set();
+  for (const category of Object.keys(categoryDefinitions)) {
+    const artworkPath = path.join(projectRoot, "templates", category, "images", "hero.svg");
+    const artwork = fs.readFileSync(artworkPath, "utf8");
+    const scene = artwork.match(/data-scene="([^"]+)"/)?.[1];
+    assert.ok(scene, `Missing illustration scene for ${category}`);
+    assert.ok(artwork.includes("<path") || artwork.includes("<circle"), `Missing illustrated subject for ${category}`);
+    assert.ok(!scenes.has(scene), `The ${category} hero reuses the ${scene} scene`);
+    scenes.add(scene);
+  }
+  assert.equal(scenes.size, Object.keys(categoryDefinitions).length);
 });
 
 test("business descriptions resolve to their most specific category", () => {

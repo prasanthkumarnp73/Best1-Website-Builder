@@ -30,7 +30,7 @@ The repository URL currently configured as this checkout's Git remote is [`https
 
 `templates/categories.json` is the catalog for supported business types, including keyword aliases, category-specific copy, products, services, and artwork colors. It covers the requested local-shop categories and the existing automotive, business, ecommerce, and portfolio templates.
 
-Run `npm run templates:build` to create category folders and refresh their shared About, Services, and Contact pages and `images/` assets. Existing category-specific homepages and styles are preserved. The generated SVG illustrations are local to each category, so generated storefronts do not depend on external stock-image URLs.
+Run `npm run templates:build` to create category folders and refresh their shared About, Services, and Contact pages and `images/` assets. Existing category-specific homepages and styles are preserved. Each category gets its own locally generated, subject-specific SVG artwork for the hero and product cards, so generated storefronts show relevant imagery without depending on external stock-image URLs.
 
 When a website is requested, the backend first checks the prompt for a specific business category, then falls back to the AI-selected category. It generates the home page at `/sites/business-name.html`, supporting pages at `/sites/business-name-about.html`, `/sites/business-name-services.html`, and `/sites/business-name-contact.html`, and copies the category's CSS, JavaScript, and images to `/sites/business-name-assets/`.
 
