@@ -20,27 +20,35 @@ test("all requested business categories are defined and have four-page templates
     for (const fileName of ["index.html", "about.html", "services.html", "contact.html"]) {
       assert.ok(fs.existsSync(path.join(categoryDirectory, fileName)), `Missing ${category}/${fileName}`);
     }
-    assert.ok(fs.existsSync(path.join(categoryDirectory, "images", "hero.svg")), `Missing ${category} hero image`);
-    const heroArtwork = fs.readFileSync(path.join(categoryDirectory, "images", "hero.svg"), "utf8");
-    assert.match(heroArtwork, /data-scene="[^"]+"/, `Missing category-specific artwork for ${category}`);
+    assert.ok(fs.existsSync(path.join(categoryDirectory, "images", "hero.jpg")), `Missing ${category} hero photo`);
     for (let index = 1; index <= 3; index += 1) {
-      assert.ok(fs.existsSync(path.join(categoryDirectory, "images", `product-${index}.svg`)), `Missing ${category} product image ${index}`);
+      assert.ok(fs.existsSync(path.join(categoryDirectory, "images", `product-${index}.jpg`)), `Missing ${category} product photo ${index}`);
     }
   }
 });
 
-test("each business category has its own offline-ready hero illustration", () => {
-  const scenes = new Set();
+test("each business category has offline-ready CC0 photos and source records", () => {
+  const photoAssets = JSON.parse(fs.readFileSync(path.join(projectRoot, "templates", "photo-assets.json"), "utf8"));
+  assert.equal(photoAssets.license, "CC0 1.0");
   for (const category of Object.keys(categoryDefinitions)) {
-    const artworkPath = path.join(projectRoot, "templates", category, "images", "hero.svg");
-    const artwork = fs.readFileSync(artworkPath, "utf8");
-    const scene = artwork.match(/data-scene="([^"]+)"/)?.[1];
-    assert.ok(scene, `Missing illustration scene for ${category}`);
-    assert.ok(artwork.includes("<path") || artwork.includes("<circle"), `Missing illustrated subject for ${category}`);
-    assert.ok(!scenes.has(scene), `The ${category} hero reuses the ${scene} scene`);
-    scenes.add(scene);
+    const records = photoAssets.categories[category]?.photos || [];
+    assert.equal(records.length, 4, `Expected four photo records for ${category}`);
+    const photoIds = records.map((photo) => photo.openverseRecord);
+    for (const photoId of new Set(photoIds)) {
+      const uses = photoIds.filter((candidate) => candidate === photoId).length;
+      if (uses > 1) {
+        assert.ok(records.filter((photo) => photo.openverseRecord === photoId).slice(1).every((photo) => photo.reusedPhoto), `Repeated source photos must be labelled for ${category}`);
+      }
+    }
+    for (const photo of records) {
+      const photoPath = path.join(projectRoot, "templates", category, "images", photo.filename);
+      const bytes = fs.readFileSync(photoPath);
+      assert.equal(photo.license, "CC0 1.0", `Expected CC0 photo for ${category}/${photo.filename}`);
+      assert.equal(bytes[0], 0xff, `Expected JPEG photo for ${category}/${photo.filename}`);
+      assert.equal(bytes[1], 0xd8, `Expected JPEG photo for ${category}/${photo.filename}`);
+      assert.ok(bytes.length > 8_000, `Expected a non-empty photo for ${category}/${photo.filename}`);
+    }
   }
-  assert.equal(scenes.size, Object.keys(categoryDefinitions).length);
 });
 
 test("business descriptions resolve to their most specific category", () => {

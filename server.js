@@ -319,7 +319,7 @@ function saveGeneratedSite(fileName, details, category) {
   const navigation = `<nav class="generated-site-nav" aria-label="Business pages"><a href="${pageUrls.home}">Home</a><a href="${pageUrls.about}">About</a><a href="${pageUrls.services}">Services</a><a href="${pageUrls.contact}">Contact Us</a></nav>`;
   const renderList = (items) => items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   const renderProducts = (items, className) => items.map((product, index) => {
-    const image = `${assetDirectoryUrl(assetFolder)}/images/product-${(index % 3) + 1}.svg`;
+    const image = `${assetDirectoryUrl(assetFolder)}/images/product-${(index % 3) + 1}.jpg`;
     return `<article class="${className}"><img src="${image}" alt="${escapeAttribute(product.name)}"><div><h3>${escapeHtml(product.name)}</h3><p>${escapeHtml(product.description || "Ask us about this product or service.")}</p><button type="button" data-add data-product="${escapeAttribute(product.name)}">Add to bag</button></div></article>`;
   }).join("");
   const offer = String(details.specialOffer || "");
@@ -366,9 +366,15 @@ function saveGeneratedSite(fileName, details, category) {
   let imageIndex = 0;
   const homepageWithLocalImages = navigableHomepage.replace(/(<img\b[^>]*\bsrc=)["']https?:\/\/[^"']+["']/gi, (_match, prefix) => {
     imageIndex += 1;
-    const imageName = imageIndex === 1 ? "hero.svg" : `product-${((imageIndex - 2) % 3) + 1}.svg`;
+    const imageName = imageIndex === 1 ? "hero.jpg" : `product-${((imageIndex - 2) % 3) + 1}.jpg`;
     return `${prefix}"${assetDirectoryUrl(assetFolder)}/images/${imageName}"`;
-  });
+  }).replace(
+    new RegExp(`${assetDirectoryUrl(assetFolder)}/images/hero\\.svg`, "g"),
+    `${assetDirectoryUrl(assetFolder)}/images/hero.jpg`
+  ).replace(
+    new RegExp(`${assetDirectoryUrl(assetFolder)}/images/product-(\\d+)\\.svg`, "g"),
+    (_match, index) => `${assetDirectoryUrl(assetFolder)}/images/product-${((Number(index) - 1) % 3) + 1}.jpg`
+  );
   fs.writeFileSync(path.join(sitesDirectory, path.basename(fileName)), homepageWithLocalImages, "utf8");
 
   for (const pageName of ["about", "services", "contact"]) {
@@ -376,6 +382,38 @@ function saveGeneratedSite(fileName, details, category) {
     fs.writeFileSync(path.join(sitesDirectory, `${slug}-${pageName}.html`), render(pageTemplate), "utf8");
   }
 }
+
+function migrateGeneratedSitesToRealPhotos() {
+  if (!fs.existsSync(sitesDirectory)) return;
+  const generatedPages = fs.readdirSync(sitesDirectory).filter((fileName) => fileName.endsWith(".html"));
+  const copiedImageDirectories = new Set();
+  for (const fileName of generatedPages) {
+    const pagePath = path.join(sitesDirectory, fileName);
+    const html = fs.readFileSync(pagePath, "utf8");
+    const category = html.match(/<html\b[^>]*\bdata-category=["']([a-z0-9-]+)["']/i)?.[1];
+    const imagePath = html.match(/\/sites\/([a-z0-9_-]+-assets)\/images\/hero\.svg/i);
+    if (!categoryDefinitions[category] || !imagePath) continue;
+
+    const imageDirectory = path.join(sitesDirectory, imagePath[1], "images");
+    if (!copiedImageDirectories.has(imageDirectory)) {
+      const templateImagesDirectory = path.join(templatesDirectory, category, "images");
+      fs.mkdirSync(imageDirectory, { recursive: true });
+      for (const imageName of ["hero.jpg", "product-1.jpg", "product-2.jpg", "product-3.jpg"]) {
+        fs.copyFileSync(path.join(templateImagesDirectory, imageName), path.join(imageDirectory, imageName));
+      }
+      copiedImageDirectories.add(imageDirectory);
+    }
+
+    const updatedHtml = html
+      .replace(/(\/sites\/[a-z0-9_-]+-assets\/images\/hero)\.svg/gi, "$1.jpg")
+      .replace(/(\/sites\/[a-z0-9_-]+-assets\/images\/product-)(\d+)\.svg/gi, (_match, prefix, index) => (
+        `${prefix}${((Number(index) - 1) % 3) + 1}.jpg`
+      ));
+    if (updatedHtml !== html) fs.writeFileSync(pagePath, updatedHtml, "utf8");
+  }
+}
+
+migrateGeneratedSitesToRealPhotos();
 
 app.post("/ai", async (req, res) => {
   const prompt = String(req.body.prompt || "").trim();

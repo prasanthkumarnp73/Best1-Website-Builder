@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "templates:build": "node scripts/build-business-templates.js",
+    "photos:download": "node scripts/download-business-photos.js",
     "test": "node --test"
   },
   "dependencies": {

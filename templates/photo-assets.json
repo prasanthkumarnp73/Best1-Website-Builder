@@ -1,0 +1,1036 @@
+{
+  "source": "Openverse",
+  "searchUrl": "https://openverse.org/",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "note": "Photos are locally bundled from CC0-licensed Openverse results. CC0 does not require attribution; source records are retained here.",
+  "categories": {
+    "automotive": {
+      "search": "car showroom",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Mural Banners - Brantford Car Dealership",
+          "creator": "Matt Jackson Matt",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/160527667@N06/50191797511",
+          "openverseRecord": "https://openverse.org/image/af13188c-ab0e-4842-974c-fed37521f47a"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Volvo 940",
+          "creator": "Mussi Katz",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/52775988@N00/51429141951",
+          "openverseRecord": "https://openverse.org/image/e450ebb6-f7d2-4c28-9f4e-1dc1db606dd8"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Auto Service in India",
+          "creator": "MyStockPhotos",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/136375272@N05/47263766131",
+          "openverseRecord": "https://openverse.org/image/987f726b-9f6f-4833-9a74-146bfe007bf0"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Zell Motor Car Company Showroom, 11 E. Mount Royal Avenue, Baltimore, MD",
+          "creator": "Baltimore Heritage",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/44034762@N04/24356744702",
+          "openverseRecord": "https://openverse.org/image/3813cdd6-f81e-4089-abee-5d65555b7537"
+        }
+      ]
+    },
+    "advocate-office": {
+      "search": "law office",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Mitchell Family Law Office, 1239 Druid Hill Avenue, Baltimore, MD 21217",
+          "creator": "Baltimore Heritage",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/44034762@N04/41510403642",
+          "openverseRecord": "https://openverse.org/image/c690f063-ee87-4251-b583-22ebe0d6c76e"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Hannibal: Mark Twain's Father's Law Office",
+          "creator": "Gary Lee Todd, Ph.D.",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/101561334@N08/10531815735",
+          "openverseRecord": "https://openverse.org/image/86dcc5f1-5b41-4ed0-97dd-4c79ea662448"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "University of Baltimore Clinical Law Offices, 40 W. Chase Street, Baltimore, MD 21201",
+          "creator": "Baltimore Heritage",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/44034762@N04/34583984865",
+          "openverseRecord": "https://openverse.org/image/e611a097-8ee2-4bcd-9d1f-bac26f9adc57"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Lincoln's Springfield Law Office",
+          "creator": "Gary Lee Todd, Ph.D.",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/101561334@N08/10530812265",
+          "openverseRecord": "https://openverse.org/image/65f0ab63-a1aa-41ad-abea-4e06305d1bdc"
+        }
+      ]
+    },
+    "bakery": {
+      "search": "bakery bread",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Rosquillas de la abuela",
+          "creator": "Daquella manera",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/62518311@N00/352991392",
+          "openverseRecord": "https://openverse.org/image/42b97b7b-b3ca-40b9-9568-694890a098b1"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Wheat Bread #1",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/3544028525",
+          "openverseRecord": "https://openverse.org/image/c7fa877a-5abe-44bc-bcd5-4ad078729750"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Bakery in Sri Lanka",
+          "creator": "Dennis S. Hurd",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/43296902@N00/51193473",
+          "openverseRecord": "https://openverse.org/image/d14c13fc-dd91-4af1-b183-9988212bd738"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Stollen from Andy's Bakery",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/74333241",
+          "openverseRecord": "https://openverse.org/image/f50fa9de-be90-4759-a14a-17f099d76522"
+        }
+      ]
+    },
+    "bangles-earrings": {
+      "search": "earrings jewelry",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Gold Earrings & Jewelry Hoard, 11th Century AD",
+          "creator": "Gary Lee Todd, Ph.D.",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/101561334@N08/43171349562",
+          "openverseRecord": "https://openverse.org/image/ca7da9c7-a8f8-4b27-be30-49109f01425b"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "500325160",
+          "creator": "skeyndor.oficial",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/57794015@N05/37741479906",
+          "openverseRecord": "https://openverse.org/image/01d0cef5-0654-41f8-906b-678e54bb763a"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Ear ornaments from Peru",
+          "creator": "Thad Zajdowicz",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/40632439@N00/37842747911",
+          "openverseRecord": "https://openverse.org/image/6acfa1d7-28cd-4027-ade1-253465d8f59a"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Add To Public Domain Album",
+          "creator": "Barefoot Hippies",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/76658560@N04/51654085924",
+          "openverseRecord": "https://openverse.org/image/5f718d4d-acba-4ab5-9f6c-b315cd3362ca"
+        }
+      ]
+    },
+    "business": {
+      "search": "business owner",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "UPS Salutes Small Businesses",
+          "creator": "sarahswenty",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/141651770@N05/26835904505",
+          "openverseRecord": "https://openverse.org/image/484ed70d-eebd-4ef3-98f9-0f2c0461adee"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Kelly Lynch a local artist and small business owner",
+          "creator": "Greenville, SC Daily Photo",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/120143184@N05/47951901333",
+          "openverseRecord": "https://openverse.org/image/83b1e913-66ac-4b6d-8774-ac0c67980262"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Saratoga Springs Broadway Small Business Tour",
+          "creator": "ltgovdelgado",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/200120064@N03/53776045241",
+          "openverseRecord": "https://openverse.org/image/547d80ae-a4c0-47ef-a212-34f787a0f8f4"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "CM Johnson meeting with Roosevelt Business Owners",
+          "creator": "Seattle City Council",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/47354378@N05/25361112863",
+          "openverseRecord": "https://openverse.org/image/2e0c2134-5237-492b-a6c8-78e21d44b3dd"
+        }
+      ]
+    },
+    "civil-construction": {
+      "search": "construction site",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "2007.08 - 'View over the long construction site' of the new metro tunnel under the city-center of Amsterdam,Prinsengracht / Vijzelgracht in the old city; Dutch photo + geotag - urban photography by Fons Heijnsbroek, the Netherlands",
+          "creator": "Amsterdam free photos & pictures of the Dutch city",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/104736837@N03/11295891426",
+          "openverseRecord": "https://openverse.org/image/3d6e8bba-6574-4b6b-9c8e-c20e741f13ba"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "2007.08 - 'View over the metro construction site' overhead; location on the North side of the city, opposite Central Station, on the other side of the water IJ; Dutch city photo + geotag, Fons Heijnsbroek, The Netherlands",
+          "creator": "Amsterdam free photos & pictures of the Dutch city",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/104736837@N03/10572353076",
+          "openverseRecord": "https://openverse.org/image/9fad3f8a-2769-49a2-b448-0a337475e1c9"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "2007.08 - 'View over the long construction site of the new metro tunnel', under the city-center of Amsterdam, for the future Noord-Zuidlijn, location Vijzelgracht, old center; Dutch urban city photo + geotag, Fons Heijnsbroek, The Netherlands",
+          "creator": "Amsterdam free photos & pictures of the Dutch city",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/104736837@N03/11293851396",
+          "openverseRecord": "https://openverse.org/image/e384b4a3-c6b7-4f04-9e37-5a0782898d82"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "2013.06 - 'Black and White urban photography', from the city - Construction still-life of construction equipment and building material at the metro construction site Vijzelgracht in Amsterdam; photography in the Netherlands, Fons Heijnsbroek",
+          "creator": "Amsterdam free photos & pictures of the Dutch city",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/104736837@N03/10562031243",
+          "openverseRecord": "https://openverse.org/image/677e1ef9-c3df-4d70-b27b-5adf52cd2384"
+        }
+      ]
+    },
+    "clothing": {
+      "search": "clothing store",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Open sign in clothing store.",
+          "creator": "Artem Beliaikin",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/157635012@N07/44256405604",
+          "openverseRecord": "https://openverse.org/image/5ed7c576-3ec5-40ff-953f-49134e54bd6f"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Women clothing store on Bali island, Indonesia.",
+          "creator": "Artem Beliaikin",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/157635012@N07/50185283413",
+          "openverseRecord": "https://openverse.org/image/e6b460d5-7fb1-443d-9284-ea7c9039fd95"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Women Shoe Store",
+          "creator": "MyStockPhotos",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/136375272@N05/33389051828",
+          "openverseRecord": "https://openverse.org/image/1eb32445-8032-4d18-b47d-ffc58934ce72"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Woman clothes in the store. Fashion store. Shopping mall.",
+          "creator": "Artem Beliaikin",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/157635012@N07/49174901528",
+          "openverseRecord": "https://openverse.org/image/91f937ef-bffd-4513-9856-c627365e1cbe"
+        }
+      ]
+    },
+    "cycle-shop": {
+      "search": "bicycle shop",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "G.Takayesu Bicycle Shop 1935",
+          "creator": "billymeinke",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/67338640@N04/31998215196",
+          "openverseRecord": "https://openverse.org/image/3558cdc6-85f6-484d-83c6-a8dbe49d5e95"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Thanks to side saddle bicycle shop for retrofitting a sturmey archer hub dynamo & Busch + Müller Cyo T front light onto my 1946 schwinn 'ladies' bicycle! It's my 3rd B&M hub dynamo front light since 1997! Tech has progressed to include 'daytime running li",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/50413791816",
+          "openverseRecord": "https://openverse.org/image/1d366e9a-449e-4820-88c6-73badb0b2216"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "bicycle shop",
+          "creator": "cosmicwindblown1",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/191211375@N03/50694139201",
+          "openverseRecord": "https://openverse.org/image/b43d7aa2-ad84-45bc-ba56-791f3ce5a713"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Old truck, Hindu Temple, shopping street, bicycles, apartment houses, sidewalk, sunny day, 1990 - India",
+          "creator": "Wonderlane",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/71401718@N00/14284334089",
+          "openverseRecord": "https://openverse.org/image/24f37e9f-6765-4a6a-8c6c-78e19d297b1f"
+        }
+      ]
+    },
+    "doctor-clinic": {
+      "search": "doctor clinic",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "2013_09_25_Hawa_Abdi_Center_S.jpg",
+          "creator": "AMISOM Public Information",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/61765479@N08/10439739746",
+          "openverseRecord": "https://openverse.org/image/07bda78f-4e91-4a02-8dff-14ef2de48186"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "2013_09_25_Hawa_Abdi_Center_Q.jpg",
+          "creator": "AMISOM Public Information",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/61765479@N08/10439688096",
+          "openverseRecord": "https://openverse.org/image/2e6dc1c5-8820-4a70-9807-12641cc00324"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "2013_09_25_Hawa_Abdi_Center_O.jpg",
+          "creator": "AMISOM Public Information",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/61765479@N08/10439809043",
+          "openverseRecord": "https://openverse.org/image/e70c6dcd-9b59-4aa7-9bb3-2aba3704d0a2"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "2013_09_25_Hawa_Abdi_Center_P.jpg",
+          "creator": "AMISOM Public Information",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/61765479@N08/10439683385",
+          "openverseRecord": "https://openverse.org/image/b97ad989-861e-4679-9473-8b96e9f6b486"
+        }
+      ]
+    },
+    "electronics": {
+      "search": "computer shop",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Massive Electronics Store",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/2899010212",
+          "openverseRecord": "https://openverse.org/image/db96a670-9a03-41ee-b6ad-7c2b3bbc42a2"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "18 An Electronics Store Playing Loud Latin Music, 1 Of Many On Broadway",
+          "creator": "The Fun Chronicles",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/196406308@N04/52326279718",
+          "openverseRecord": "https://openverse.org/image/a9c00470-e009-458e-8a38-2d5ff1f94661"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Airport electronics store",
+          "creator": "grandmasterhuon",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/202390793@N05/54402205979",
+          "openverseRecord": "https://openverse.org/image/78bf4a22-d0da-4777-ab8b-a126029bc43e"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Used in WhatsApp Conversation with Computer Shop",
+          "creator": "Dennis S. Hurd",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/43296902@N00/49524121468",
+          "openverseRecord": "https://openverse.org/image/a1cd3070-2f0f-4916-889d-4589a74befcf"
+        }
+      ]
+    },
+    "ecommerce": {
+      "search": "shopping products",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "There is a Store in East Vancouver...",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/2299479386",
+          "openverseRecord": "https://openverse.org/image/f18d4932-0a5b-465c-a394-cc28d0047f55"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Kiosk with Cheese Product from Slovakia in Shopping Centre Královo Pole",
+          "creator": "Kojotisko",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/98796230@N03/9763905995",
+          "openverseRecord": "https://openverse.org/image/890f1517-ca08-449f-ae20-5704d41e3697"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "There is a Store in East Vancouver...",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/2299479386",
+          "openverseRecord": "https://openverse.org/image/f18d4932-0a5b-465c-a394-cc28d0047f55",
+          "reusedPhoto": true
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "There is a Store in East Vancouver...",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/2299479386",
+          "openverseRecord": "https://openverse.org/image/f18d4932-0a5b-465c-a394-cc28d0047f55",
+          "reusedPhoto": true
+        }
+      ]
+    },
+    "fancy-store": {
+      "search": "gift shop",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "TEA ROOM AND GIFT SHOP THE Friars Aylesford.",
+          "creator": "JOHN K THORNE",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/89918055@N05/51771674387",
+          "openverseRecord": "https://openverse.org/image/e78827bf-9aa9-428c-aec0-251cd48ead44"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "From One Standing on the Corner Gift Shop to the Other",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/4797967741",
+          "openverseRecord": "https://openverse.org/image/7ecd57d7-f24c-4207-874d-92de9bcec250"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Volunteer Park Conservatory gift shop",
+          "creator": "Seattle City Council",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/47354378@N05/14135014333",
+          "openverseRecord": "https://openverse.org/image/4c54ed38-f000-44d1-8cfa-ecc5d3bc5d76"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Escape from the Gift Shop?",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/40719752545",
+          "openverseRecord": "https://openverse.org/image/39aa577b-105e-4662-9ccd-edd8b351ea5f"
+        }
+      ]
+    },
+    "fish-market": {
+      "search": "fish market",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Fish market Batac City.",
+          "creator": "Bernard Spragg",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/88123769@N02/15416371904",
+          "openverseRecord": "https://openverse.org/image/d31214ed-c531-4188-9602-b53f2f5d2bbd"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Tuna auction, Tsukiji Fish Market, Tokyo",
+          "creator": "Mustang Joe",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/63234672@N04/14467289069",
+          "openverseRecord": "https://openverse.org/image/c737816e-1b89-4014-b43a-0c923f8746c0"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Fish market.",
+          "creator": "Bernard Spragg",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/88123769@N02/9491203099",
+          "openverseRecord": "https://openverse.org/image/5e5e5f26-70a4-4e8d-9358-05101e42b254"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Fish Market",
+          "creator": "Daquella manera",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/62518311@N00/42034739794",
+          "openverseRecord": "https://openverse.org/image/a0e11a00-3f6a-4f16-9390-eec8825ea684"
+        }
+      ]
+    },
+    "fruit-shop": {
+      "search": "fruit market",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Fruit Market in Bogota",
+          "creator": "Michael Tieso",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/135601827@N02/21600709682",
+          "openverseRecord": "https://openverse.org/image/ed1d8d3f-9e26-440d-9ee8-a0873c884449"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Local produce. Tamu Kianggeh Brunei.",
+          "creator": "Bernard Spragg",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/88123769@N02/11194506414",
+          "openverseRecord": "https://openverse.org/image/0d613101-5d96-45a4-b3eb-5a262b569c40"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Produce market. Batac City. Philippines.",
+          "creator": "Bernard Spragg",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/88123769@N02/16830189588",
+          "openverseRecord": "https://openverse.org/image/925e58ea-8975-41f1-8a2d-5b60a0cedd95"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Premature ripening of bananas during oversea transport from Ecuador to Egypt, due to high air temperature in shipping container",
+          "creator": "Plant pests and diseases",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/62295966@N07/14906550275",
+          "openverseRecord": "https://openverse.org/image/529bbefd-8e6f-4889-bf6d-04087aba8696"
+        }
+      ]
+    },
+    "general-business": {
+      "search": "small business",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Theme day - local corner shops around the world",
+          "creator": "Greenville, SC Daily Photo",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/120143184@N05/47951675111",
+          "openverseRecord": "https://openverse.org/image/387341fe-5f9d-42cf-990f-835e5d6c6f6a"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Funeral small business",
+          "creator": "WrS.tm.pl",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/161233402@N07/40778470923",
+          "openverseRecord": "https://openverse.org/image/41f29f3a-2fd8-447c-9d7b-b35ad044c7e7"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "UPS Salutes Small Businesses",
+          "creator": "sarahswenty",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/141651770@N05/26835904505",
+          "openverseRecord": "https://openverse.org/image/484ed70d-eebd-4ef3-98f9-0f2c0461adee"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Kelly Lynch a local artist and small business owner",
+          "creator": "Greenville, SC Daily Photo",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/120143184@N05/47951901333",
+          "openverseRecord": "https://openverse.org/image/83b1e913-66ac-4b6d-8774-ac0c67980262"
+        }
+      ]
+    },
+    "grocery": {
+      "search": "grocery store",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Rabba Grocery Store",
+          "creator": "Open Grid Scheduler / Grid Engine",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/29155878@N03/20095546722",
+          "openverseRecord": "https://openverse.org/image/1c107c7d-55d6-424e-9a5f-a196bbf9f593"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Grocery Store",
+          "creator": "Burnt Pineapple Productions",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/51686021@N07/43418351821",
+          "openverseRecord": "https://openverse.org/image/7c90d333-ff7a-4655-8863-4ee8b7c2235b"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Our Grocery Store",
+          "creator": "Dennis S. Hurd",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/43296902@N00/50419731718",
+          "openverseRecord": "https://openverse.org/image/c4f10b8d-8b89-42ae-b2da-e17c486f19ef"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "PSS is a Polish consumers' co-operative of local grocery stores founded in 1868.",
+          "creator": "WrS.tm.pl",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/161233402@N07/33614624158",
+          "openverseRecord": "https://openverse.org/image/02f6fbd1-892e-4b93-896e-6256d2131d36"
+        }
+      ]
+    },
+    "hotel": {
+      "search": "hotel room",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "View from the Hotel Room",
+          "creator": "pasukaru76",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/38451115@N04/23629303148",
+          "openverseRecord": "https://openverse.org/image/d0869595-f103-45a5-a102-a5066812752f"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Hotel Room",
+          "creator": "Open Grid Scheduler / Grid Engine",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/29155878@N03/32259665218",
+          "openverseRecord": "https://openverse.org/image/e8dab64b-0761-4b5e-a282-e0a9c3ba84f7"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "hotel room in pisa",
+          "creator": "boklm",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/85825630@N00/685195659",
+          "openverseRecord": "https://openverse.org/image/10d24093-51f9-470c-a676-1713a53e21c1"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Belgravia Hotel room in downtown London",
+          "creator": "D Coetzee",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/29507259@N02/3538055547",
+          "openverseRecord": "https://openverse.org/image/8f2235ec-6de2-47b8-b838-d1d83255dc3d"
+        }
+      ]
+    },
+    "idly-shop": {
+      "search": "dosa food",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Idli - Masala Dosa with Jai 11July06 - 1",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/190753233",
+          "openverseRecord": "https://openverse.org/image/69639f63-4580-427c-94f1-621e8344b249"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Nooru Mahal - Great dosas, string hoppers and other Indian and Sri Lankan cuisine",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/513707",
+          "openverseRecord": "https://openverse.org/image/e352100d-0d5f-45d1-91b7-2859217d54f8"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Wada - Masala Dosa with Jai 11July06 - 2",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/190752472",
+          "openverseRecord": "https://openverse.org/image/a4323cfc-e621-42ac-8d64-447d0766df87"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Masala Dosa with Jai 11July06 - 8",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/190748357",
+          "openverseRecord": "https://openverse.org/image/a7909beb-8534-45ee-8e9b-2803b8c8c064"
+        }
+      ]
+    },
+    "pharmacy": {
+      "search": "drugstore",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Medications",
+          "creator": "freestocks.org",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/135396164@N05/28531160554",
+          "openverseRecord": "https://openverse.org/image/e7c49b5b-4b53-4b80-82e7-3a0fdb134950"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Our local drugstore",
+          "creator": "JFGryphon",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/30484128@N03/49965015026",
+          "openverseRecord": "https://openverse.org/image/4ef4b913-b1b5-4428-a167-aa52ac1f7b29"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Drugstore",
+          "creator": "Crusty Da Klown",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/148598741@N02/44527162384",
+          "openverseRecord": "https://openverse.org/image/7d1caa54-3cba-487f-a017-cfb0e06d6ae5"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Sad Drugstore",
+          "creator": "cogdogblog",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/37996646802@N01/566320144",
+          "openverseRecord": "https://openverse.org/image/29060007-dbf6-4e52-a477-851770e91ef6"
+        }
+      ]
+    },
+    "portfolio": {
+      "search": "creative studio",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Behance Portfolio Review Rivne, 11 of May 2015",
+          "creator": "Alex Korchevski",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/118834711@N02/25487835861",
+          "openverseRecord": "https://openverse.org/image/2f63dcc5-919a-4090-a7fe-7ee471e12343"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "ExTV-am",
+          "creator": "No Great Hurry",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/121214505@N06/20574613744",
+          "openverseRecord": "https://openverse.org/image/9acc5d11-0084-45b5-bce2-026dca6e6f8b"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Photography Ideas Creative Occupation Design Studio Concept",
+          "creator": "Rawpixel Ltd",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/147875007@N03/32625007620",
+          "openverseRecord": "https://openverse.org/image/cc757f43-e247-41aa-b0d5-43d84d688fa3"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Karl Krogstad Painting, the Shrine to Circusanity, Ballard, Seattle, Washington, USA",
+          "creator": "Wonderlane",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/71401718@N00/2097728876",
+          "openverseRecord": "https://openverse.org/image/104e63c9-87f2-46bb-9b56-5c09da70d1d7"
+        }
+      ]
+    },
+    "restaurant": {
+      "search": "restaurant food",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Blackfriars Restaurant, dine alfresco in Newcastle_ Escape the Everyday_Visit Britain",
+          "creator": "NewcastleGateshead",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/51877986@N02/51486353071",
+          "openverseRecord": "https://openverse.org/image/da745f00-3e5c-4545-bba0-bb927d965d0e"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "turkish food forevah!",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/16706724454",
+          "openverseRecord": "https://openverse.org/image/7e65f592-e234-4cec-805d-8354285501eb"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "15Dec2004 Hanging out at Moderne Burger - 2",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/2323968",
+          "openverseRecord": "https://openverse.org/image/efb6b68d-42c9-4381-8386-f216dc22847b"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Egg foo young with scallops",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/44514349",
+          "openverseRecord": "https://openverse.org/image/cd700337-390b-4507-9d9a-60b439e98ca8"
+        }
+      ]
+    },
+    "roadside-shop": {
+      "search": "street vendor",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Japanese street vendor",
+          "creator": "Mustang Joe",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/63234672@N04/14646497774",
+          "openverseRecord": "https://openverse.org/image/33f6a822-865b-4d81-bbb0-18c3e5d76b5f"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Vietnam Street Vendor",
+          "creator": "sbmeaper1",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/142289055@N04/32453839905",
+          "openverseRecord": "https://openverse.org/image/e21a2497-67e8-4816-ae6a-2eda0620cfda"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Street Vendor Selling Fruits on His Fruit Cart",
+          "creator": "MyStockPhotos",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/136375272@N05/40300060343",
+          "openverseRecord": "https://openverse.org/image/17ed786f-dc55-464d-beb6-3ccfcc8042e5"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Covered Street Vendors",
+          "creator": "Dennis S. Hurd",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/43296902@N00/33410957988",
+          "openverseRecord": "https://openverse.org/image/47d95bd4-ab82-474d-90fd-ea4bf25cdd7f"
+        }
+      ]
+    },
+    "salon": {
+      "search": "hair salon",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Markus J - Hair & Well Being Kitsilano",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/12848874",
+          "openverseRecord": "https://openverse.org/image/4fd017ae-d9e3-4fa9-8422-bdea8de16478"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Belleza",
+          "creator": "Daquella manera",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/62518311@N00/415526158",
+          "openverseRecord": "https://openverse.org/image/f97af49e-532b-4e36-a509-ce4934f9cff3"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Jane was a bit put out by the results of 'highlights' put in her hair at the salon.",
+          "creator": "GaoFeiWings",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/169022792@N02/53646470638",
+          "openverseRecord": "https://openverse.org/image/8b8e97ca-a17b-4458-b39f-18690a461cba"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "MBS 67-10 01a",
+          "creator": "rbd4n",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/195065336@N02/54046577380",
+          "openverseRecord": "https://openverse.org/image/c10ccec1-5f99-43fc-8a86-ed0e58227d4a"
+        }
+      ]
+    },
+    "toy-shop": {
+      "search": "toy store",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Questionable :-) Public Valentine Day remark at Steveston toy store - Roland in Vancouver 979.jpg",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/114240230",
+          "openverseRecord": "https://openverse.org/image/e0fb03a0-e8d5-4952-b624-9bedafdc4e4c"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "Benjo Toy Store / Magasin de jouets Benjo",
+          "creator": "René Bélanger",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/130540836@N04/16353416967",
+          "openverseRecord": "https://openverse.org/image/f9b11e6c-765c-4951-89ec-fa355ca29dd5"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "Barb and I at the Steveston Toy Store - Roland in Vancouver 978.jpg",
+          "creator": "roland",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/35034347371@N01/114239228",
+          "openverseRecord": "https://openverse.org/image/daf86013-ca1a-4d0f-b8de-28db5f103add"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "Магазин игрушек, Флорешты, Молдова / Magazinul de jucarii, Floresti, Moldova / Toy Store, Floresti, Moldova",
+          "creator": "photobankmd",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/137066529@N04/49367481798",
+          "openverseRecord": "https://openverse.org/image/a44ff667-737e-462f-a3d9-0a6e7e23dc86"
+        }
+      ]
+    },
+    "watch-shop": {
+      "search": "wristwatch",
+      "photos": [
+        {
+          "filename": "hero.jpg",
+          "title": "Wristwatch",
+          "creator": "paveloleynik1997",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/148639284@N07/32887704057",
+          "openverseRecord": "https://openverse.org/image/a51ea738-3df9-4694-9ad7-b711b697e7ec"
+        },
+        {
+          "filename": "product-1.jpg",
+          "title": "fashion-wristwatch-time-watch-1",
+          "creator": "pixellaphoto",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/137643065@N06/24325510005",
+          "openverseRecord": "https://openverse.org/image/1d08d10c-9fc7-435b-85a9-dba285a4e097"
+        },
+        {
+          "filename": "product-2.jpg",
+          "title": "fashion-wristwatch-time-watch",
+          "creator": "pixellaphoto",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/137643065@N06/24217032812",
+          "openverseRecord": "https://openverse.org/image/a3522ac6-3be6-459c-99d1-7f07f042513e"
+        },
+        {
+          "filename": "product-3.jpg",
+          "title": "fashion-man-wristwatch-model",
+          "creator": "pixellaphoto",
+          "license": "CC0 1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.flickr.com/photos/137643065@N06/24243195511",
+          "openverseRecord": "https://openverse.org/image/ea4476bb-0cd7-40f8-b1e6-5c79d115dacc"
+        }
+      ]
+    }
+  }
+}
